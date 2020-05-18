@@ -1,0 +1,35 @@
+.page-main {
+  width: 100%;
+  @include center;
+  min-width: 1024px;
+  background: transparent;
+}
+
+.page-main__slogan {
+  width: 1366px;
+  @include center;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-main {
+    width: 100%;
+    min-width: 768px;
+  }
+
+  .page-main__slogan {
+    width: 100%;
+    max-width: 1023px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .page-main {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .page-main__slogan {
+    width: 100%;
+    max-width: 767px;
+  }
+}

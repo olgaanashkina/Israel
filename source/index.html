@@ -18,14 +18,14 @@
   </div>
   <header class="page-header">
     <div class="page-header__wrap">
-      <a  class="page-header__phone" href="tel:+97226216581" aria-label="Телефон">
-        <p class="page-header__tel">+ (972) 2 – 621 – 6581</p>
-      </a>
       <a class="page-header__logo">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-mob.png">
           <img class="page-header__image" src="img/logo-desctop.png" width="137" height="48" alt="Логотип проекта Маса Израиль">
         </picture>
+      </a>
+      <a  class="page-header__phone" href="tel:+97226216581" aria-label="Телефон">
+        <p class="page-header__tel">+ (972) 2 – 621 – 6581</p>
       </a>
       <button class="page-header__button" type="button">заказать звонок</button>
     </div>
@@ -33,14 +33,15 @@
   <main class="page-main">
     <h1 class="page-main__head visually-hidden">Проект Маса Израиль</h1>
     <section class="page-main__slogan slogan">
+      <h2 class="slogan__head visually-hidden">Мы предлагаем</h2>
       <div class="slogan__wrap">
         <p class="slogan__content">Учёба, путешествие и карьера для еврейской молодёжи</p>
+        <a class="slogan__scroll" href="#description" aria-label="Прокрутить вниз"></a>
       </div>
-      <a href="#" aria-label="Прокрутить вниз">#</a>
     </section>
-    <section class="page-main__description description">
+    <section class="page-main__description description" id="description">
       <h2 class="description__head">О программе</h2>
-      <p class="description__content">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+      <p class="description__content">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
       <div class="description__video">
         <picture>
           <source media="(max-width: 767px)" srcset="img/video-mob@1x.jpg 1x, img/video-mob@2x.jpg 2x">
@@ -94,8 +95,8 @@
       <p class="callback__title">Хочу поехать!</p>
       <p class="callback__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
       <form class="callback__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="callback__input" name="telephone" type="text" id="phone" value="" placeholder="Телефон" maxlength="16" required="required">
-        <label class="callback__label" for="phone">перезвоните мне</label>
+        <input class="callback__input" name="telephone" type="text" id="callback" value="" placeholder="Телефон" maxlength="16" required="required">
+        <label class="callback__label" for="callback">перезвоните мне</label>
       </form>
     </section>
     <section class="page-main__conditions conditions">
@@ -112,11 +113,11 @@
     </section>
     <section class="page-main__advantages advantages">
       <h2 class="advantages__head">Жизнь в израиле</h2>
-      <p class="advantages__content">Помимо учёбы, в рамках программы у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
+      <p class="advantages__content">Помимо учёбы, в рамках программы у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
       <div class="advantages__wrap">
         <div class="advantages__unit">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/video-mob@1x.jpg 1x, img/video-mob@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="img/trip-mob@1x.jpg 1x, img/trip-mob@2x.jpg 2x">
             <img class="advantages__image" src="img/trip-desctop@1x.jpg" srcset="img/trip-desctop@2x.jpg 2x" width="482" height="732" alt="Фото Купола Скалы">
           </picture>
           <p class="advantages__title">Экскурсии по Израилю  и знакомство с его историей</p>
@@ -152,8 +153,9 @@
       </div>
     </section>
     <section class="page-main__blogs blogs">
+      <h2 class="blogs__head visually-hidden">Блоги и фотодневники участников</h2>
       <span class="blogs__hashtag">#masaisrael</span>
-      <p class="blogs__content">Познакомьтесь с программой  от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
+      <p class="blogs__content">Познакомьтесь с программой  от первого лица! Многие участники ведут блоги и фотодневники  о жизни, учёбе и путешествиях в Израиле.</p>
       <a class="blogs__link" href="#">смотреть фото</a>
     </section>
     <section class="page-main__questions questions">
@@ -233,11 +235,114 @@
     </section>
     <section class="page-main__details details">
       <h2 class="details__head">Узнать подробности</h2>
-
+      <p class="details__city city">Ваш город:
+        <select class="city__name" name="select" size="1" multiple>
+          <option class="city__item" value="s1">новосибирск</option>
+        </select>
+      </p>
+      <div class="details__wrap">
+        <p class="details__curator">Ваш куратор:</p>
+        <p class="details__firstname">Анна Горелик</p>
+        <p class="details__address">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
+      </div>
+      <ul class="details__social social">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Фейсбук">
+            <svg class="social__icon social__icon--fb" width="24px" height="24px">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Вотсап">
+            <svg class="social__icon social__icon--wa" width="24px" height="24px">
+              <use xlink:href="#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Телеграмм">
+            <svg class="social__icon social__icon--tg" width="24px" height="24px">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="details__content">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою!</p>
+      <div class="details__map">
+        <iframe class="details__imap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8351890697313!2d82.92595595127055!3d55.028580680269506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5dbac1b18ff%3A0xb19fdf59fc163a35!2z0JHQtdC50YIg0JzQtdC90LDRhdC10Lw!5e0!3m2!1sru!2sru!4v1589632737268!5m2!1sru!2sru" width="702" height="448" allowfullscreen></iframe>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/map-mob.png">
+            <img class="details__image" src="img/map-desctop.png" width="702" height="448" alt="Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем">
+          </picture>
+      </div>
+      <div class="details__cont">
+        <p class="details__request">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        <p class="details__security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
+        <form class="details_form form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="form__input form__input--name" name="name" type="text" id="firstname" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
+          <label class="visually-hidden" for="firstname">Введите имя</label>
+          <input class="form__input form__input--phone" name="telephone" type="text" id="telephone" value="" placeholder="Телефон" maxlength="16" required="required">
+          <label class="visually-hidden" for="telephone">Введите телефон</label>
+          <button class="form__button" type="submit" name="button">перезвоните мне</button>
+        </form>
+      </div>
     </section>
-
   </main>
-
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/graylogo-mob.png">
+        <img class="page-footer__image" src="img/graylogo-desctop.png" width="85" height="27" alt="Логотип проекта Маса Израиль">
+      </picture>
+    </a>
+    <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Фейсбук">
+          <svg class="social__icon social__icon--fb" width="24px" height="24px">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Твиттер">
+          <svg class="social__icon social__icon--tw" width="24px" height="24px">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Инстаграмм">
+          <svg class="social__icon social__icon--inst" width="24px" height="24px">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <div class="overlay">
+  </div>
+  <section class="modal">
+    <button class="modal__close" type="button" name="button" aria-label="Закрыть окно">X</button>
+    <h2 class="modal__head">Заказать звонок</h2>
+    <p class="modal__content">Оставьте ваши контактные данные, мы свяжемся  с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+    <form class="modal_form form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="form__input form__input--name" name="name" type="text" id="name" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
+      <label class="visually-hidden" for="name">Введите имя</label>
+      <input class="form__input form__input--phone" name="telephone" type="text" id="phone" value="" placeholder="Телефон" maxlength="16" required="required">
+      <label class="visually-hidden" for="phone">Введите телефон</label>
+      <button class="form__button" type="submit" name="button">перезвоните мне</button>
+      <input class="form__checkbox" type="checkbox" name="consent" id="consent">
+      <label for="consent">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+    </form>
+  </section>
+  <section class="success">
+    <button class="success__close" type="button" name="button" aria-label="Закрыть окно">X</button>
+    <h2 class="success__head">Заявка принята</h2>
+    <p class="success__content">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+    <button class="success__ok" type="button" name="button">Понятно</button>
+  </section>
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );

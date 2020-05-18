@@ -1,4 +1,6 @@
 @import "blocks/var-mixin.scss";
+@import "blocks/page-header.scss";
+@import "blocks/slogan.scss";
 
 @font-face {
   font-family: "Montserrat";
@@ -35,17 +37,19 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   @include center;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-size: 15px;
-  line-height: 26px;
+  line-height: 18px;
   overflow-x: hidden;
   color: $wet-asphalt;
+  background-color: $white;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $wet-asphalt;
 }
 
 .visually-hidden {

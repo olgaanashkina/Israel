@@ -1,0 +1,90 @@
+.slogan {
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/telaviv-desctop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -90px;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/telaviv-desctop@2x.jpg");
+    background-size: 1366px auto;
+  }
+}
+
+.slogan__wrap {
+  width: 350px;
+  min-height: 230px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan__content {
+  @include marginnone;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $white;
+}
+
+.slogan__scroll {
+  width: 76px;
+  height: 132px;
+  background-image: url("../img/mouse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .slogan {
+    min-width: 768px;
+    min-height: 700px;
+    background-size: 1023px auto;
+  }
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .slogan {
+    min-width: 320px;
+    min-height: 605px;
+    background-image: url("../img/telaviv-mob@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    margin-top: -40px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/telaviv-mob@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .slogan__wrap {
+    width: 290px;
+    min-height: 215px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slogan__content {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
