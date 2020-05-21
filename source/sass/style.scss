@@ -1,66 +1,8 @@
 @import "blocks/var-mixin.scss";
+@import "blocks/font.scss";
+@import "blocks/body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/slogan.scss";
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat.woff2") format("woff2"),
-    url("../fonts/montserrat.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fira Sans";
-  src: url("../fonts/firasans.woff2") format("woff2"),
-    url("../fonts/firasans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/raleway.woff2") format("woff2"),
-    url("../fonts/raleway.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-html {
-  width: 100%;
-  @include center;
-  overflow-x: hidden;
-}
-
-body {
-  width: 100%;
-  min-width: 320px;
-  @include center;
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 18px;
-  overflow-x: hidden;
-  color: $wet-asphalt;
-  background-color: $white;
-}
-
-a {
-  text-decoration: none;
-  color: $wet-asphalt;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "blocks/description.scss";
+@import "blocks/programs.scss";
+@import "blocks/tabs.scss";

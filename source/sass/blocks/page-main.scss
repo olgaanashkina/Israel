@@ -10,6 +10,16 @@
   @include center;
 }
 
+.page-main__description {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__programs {
+  width: 1366px;
+  @include center;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-main {
     width: 100%;
@@ -17,6 +27,15 @@
   }
 
   .page-main__slogan {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__description {
+    width: 100%;
+  }
+
+  .page-main__programs {
     width: 100%;
     max-width: 1023px;
   }
@@ -30,6 +49,14 @@
 
   .page-main__slogan {
     width: 100%;
+    max-width: 767px;
+  }
+
+  .page-main__description {
+    max-width: 767px;
+  }
+
+  .page-main__programs {
     max-width: 767px;
   }
 }

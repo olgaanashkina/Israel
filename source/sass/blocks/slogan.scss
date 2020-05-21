@@ -1,5 +1,6 @@
 .slogan {
   min-height: 900px;
+  margin-top: -90px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -7,7 +8,6 @@
   background-image: url("../img/telaviv-desctop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -90px;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -61,11 +61,12 @@
   .slogan {
     min-width: 320px;
     min-height: 605px;
+    margin-top: -40px;
+    margin-bottom: 40px;
     background-image: url("../img/telaviv-mob@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    margin-top: -40px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -77,7 +78,6 @@
   .slogan__wrap {
     width: 290px;
     min-height: 215px;
-    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;

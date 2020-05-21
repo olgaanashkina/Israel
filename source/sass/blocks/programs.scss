@@ -1,0 +1,98 @@
+.programs {
+  min-height: 505px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/sketch-desctop.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.programs__wrap {
+  max-width: 860px;
+  min-height: 456px;
+  margin-top: 48px;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.programs__head {
+  min-width: 300px;
+  @include marginnone;
+  margin-bottom: 45px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .programs {
+    width: 100%;
+    max-width: 1023px;
+    min-height: 505px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/sketch-desctop.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+  }
+
+  .programs__wrap {
+    width: 750px;
+    min-height: 456px;
+    margin-top: 0px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .programs__head {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: left;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .programs {
+    width: 100%;
+    max-width: 767px;
+    min-height: 525px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/sketch-mob.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .programs__wrap {
+    min-width: 320px;
+    width: 100%;
+    min-height: 525px;
+    @include marginnone;
+    align-items: center;
+  }
+
+  .programs__head {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+}

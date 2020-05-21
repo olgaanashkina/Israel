@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  min-width: 320px;
+  @include center;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  overflow-x: hidden;
+  color: $wet-asphalt;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $wet-asphalt;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

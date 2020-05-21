@@ -1,7 +1,7 @@
 .page-header {
   width: 100%;
-  @include center;
   min-width: 1024px;
+  @include center;
   background: transparent;
 }
 
@@ -26,7 +26,7 @@
 
 }
 
-.page-header__tel {
+.page-header__phone p {
   min-width: 140px;
   @include marginnone;
 }
