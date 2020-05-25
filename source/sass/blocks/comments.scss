@@ -1,0 +1,382 @@
+.comments {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 565px;
+  @include center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/watercolor-scetch.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.comments__container {
+  max-width: 1080px;
+  width: 79.1%;
+  min-height: 537px;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comments__head {
+  @include marginnone;
+  @include center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: center;
+}
+
+.comments__slider {
+  position: relative;
+  min-width: 1024px;
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.comments__slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.comments__wrap {
+  width: 680px;
+  min-height: 359px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__name {
+  @include marginnone;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $wet-asphalt;
+  opacity: 0.74;
+}
+
+.comments__wrapper {
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.comments__program {
+  @include marginnone;
+  margin-right: 8px;
+  color: $blue;
+}
+
+.comments__nomination {
+  @include marginnone;
+  color: $wet-asphalt;
+  opacity: 0.74;
+}
+
+.comments__content {
+  width: 100%;
+  @include marginnone;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.74;
+}
+
+.comments__link {
+  width: 150px;
+  font-size: 17px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  color: $blue;
+}
+
+.comments__cont {
+  width: 49.7%;
+  margin-top: -50px;
+  margin-left: 36.5%;
+  display: flex;
+}
+
+.comments__counter {
+  width: 36px;
+  min-height: 26px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.comments__count,
+.comments__amount {
+  @include marginnone;
+}
+
+.comments__buttons {
+  width: 46px;
+  min-height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments__button {
+  width: 15px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+
+  &--left {
+    background-image: url("../img/prev.svg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/prev-active.svg");
+    }
+  }
+
+  &--right {
+    background-image: url("../img/next.svg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/next-active.svg");
+    }
+  }
+}
+
+.comments__social {
+  width: 15.3%;
+  @include marginnone;
+  margin-left: auto;
+  z-index: 3;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .comments {
+    width: 100%;
+    max-width: 1023px;
+    min-height: 465px;
+  }
+
+  .comments__container {
+    max-width: 970px;
+    width: 95%;
+    min-height: 360px;
+    margin-left: 0;
+    @include center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comments__head {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .comments__slider {
+    position: relative;
+    min-width: 730px;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .comments__wrap {
+    min-width: 490px;
+    width: 65%;
+  }
+
+  .comments__name {
+    margin-top: 10px;
+  }
+
+  .comments__wrapper {
+    margin-bottom: 10px;
+  }
+
+  .comments__content {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .comments__cont {
+    width: 63%;
+    margin-top: 0;
+    margin-left: 34%;
+    display: flex;
+  }
+
+  .comments__slide img {
+    width: 240px;
+    height: auto;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .comments {
+    width: 100%;
+    max-width: 767px;
+    min-height: 1054px;
+    margin-bottom: 78px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/watercolor-scetch-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 80%;
+  }
+
+  .comments__container {
+    max-width: 767px;
+    width: 90%;
+    min-height: 1054px;
+    @include center;
+  }
+
+  .comments__head {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .comments__slider {
+    min-width: 288px;
+    width: 100%;
+    min-height: 945px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comments__slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+
+  .comments__slide img {
+    width: 240px;
+    height: 320px;
+    margin-bottom: 58px;
+  }
+
+  .comments__wrap {
+    width: 288px;
+    min-height: 567px;
+    @include marginnone;
+    @include center;
+  }
+
+  .comments__name {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 0.74;
+  }
+
+  .comments__wrapper {
+    width: 100%;
+    min-height: 44px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .comments__content {
+    width: 100%;
+    @include marginnone;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.74;
+  }
+
+  .comments__link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .comments__cont {
+    width: 288px;
+    @include marginnone;
+    @include center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .comments__counter {
+    position: absolute;
+    top: 390px;
+    left: 33%;
+  }
+
+  .comments__buttons {
+    position: absolute;
+    top: 395px;
+    right: 33%;
+  }
+
+  .comments__social {
+    width: 15.3%;
+    @include marginnone;
+    z-index: 1;
+  }
+}

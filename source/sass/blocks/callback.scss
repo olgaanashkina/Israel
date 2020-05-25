@@ -1,0 +1,220 @@
+.callback {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 594px;
+  @include center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/flag-desctop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/flag-desctop@2x.jpg");
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 150px;
+    left: 0;
+    width: 167px;
+    height: 226px;
+    background-image: url("../img/backpack-desctop.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.callback__wrap {
+  width: 477px;
+  min-height: 254px;
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.callback__title {
+  @include marginnone;
+  margin-top: 75px;
+  margin-bottom: 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: left;
+}
+
+.callback__text {
+  width: 400px;
+  margin-bottom: 64px;
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.87;
+}
+
+.callback__form {
+  position: relative;
+  width: 477px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input:invalid {
+  box-shadow: none;
+}
+
+.callback__input {
+  width: 310px;
+  min-height: 59px;
+  padding: 0 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  opacity: 0.87;
+  border: 2px solid $ight-gray;
+  box-sizing: border-box;
+  border-radius: 80px;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.callback__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 216px;
+  min-height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $white;
+  background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+  border-radius: 80px;
+  border: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .callback {
+    width: 100%;
+    max-width: 1023px;
+    min-height: 440px;
+    background-position: top right;
+    background-size: 60%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50px;
+      left: 0;
+    }
+  }
+
+  .callback__wrap {
+    width: 750px;
+    min-height: 254px;
+    @include center;
+  }
+
+  .callback__title {
+    @include marginnone;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .callback__text {
+    width: 300px;
+    margin-bottom: 64px;
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 0.87;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .callback {
+    width: 100%;
+    max-width: 767px;
+    min-height: 599px;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+    background-image: url("../img/flag-mob@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/flag-mob@2x.jpg");
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -30px;
+      left: 0;
+      width: 120px;
+      height: 162px;
+      background-image: url("../img/backpack-mob.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .callback__wrap {
+    width: 287px;
+    min-height: 295px;
+    @include center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .callback__title {
+    width: 287px;
+    @include marginnone;
+    margin-top: 15px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .callback__text {
+    width: 287px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .callback__form {
+    width: 287px;
+    min-height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .callback__input {
+    width: 287px;
+    margin-bottom: 8px;
+  }
+
+  .callback__button {
+    position: relative;
+    width: 287px;
+  }
+}

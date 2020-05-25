@@ -20,6 +20,41 @@
   @include center;
 }
 
+.page-main__callback {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__conditions {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__advantages {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__blogs {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__questions {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__comments {
+  width: 1366px;
+  @include center;
+}
+
+.page-main__details {
+  width: 1366px;
+  @include center;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-main {
     width: 100%;
@@ -36,6 +71,41 @@
   }
 
   .page-main__programs {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__callback {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__conditions {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__advantages {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__blogs {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__questions {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__comments {
+    width: 100%;
+    max-width: 1023px;
+  }
+
+  .page-main__details {
     width: 100%;
     max-width: 1023px;
   }
@@ -58,5 +128,33 @@
 
   .page-main__programs {
     max-width: 767px;
+  }
+
+  .page-main__callback {
+    max-width: 767px;
+  }
+
+  .page-main__conditions {
+    max-width: 767px;
+  }
+
+  .page-main__advantages {
+    max-width: 767px;
+  }
+
+  .page-main__blogs {
+    max-width: 767px;
+  }
+
+  .page-main__questions {
+    max-width: 767px;
+  }
+
+  .page-main__comments {
+    max-width: 767px;
+  }
+
+  .page-main__details {
+      max-width: 767px;
   }
 }

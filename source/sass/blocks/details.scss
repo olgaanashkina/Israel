@@ -1,0 +1,189 @@
+.details {
+  width: 100%;
+  max-width: 1366px;
+  min-height: 700px;
+  @include center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url("../img/watercolor-cart.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.details__envelope {
+  width: 1256px;
+  min-height: 625px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details__container {
+  width: 100%;
+  min-height: 448px;
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.details__head {
+  @include marginnone;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: left;
+}
+
+.details__wrapper {
+  width: 38%;
+  min-height: 293px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.details__city {
+  width: 250px;
+  min-height: 24px;
+  font-size: 15px;
+  line-height: 22px;
+  opacity: 0.74;
+}
+
+.details__wrap {
+  position: relative;
+  width: 288px;
+  min-height: 111px;
+  margin-left: 132px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 22px;
+  opacity: 0.74;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -130px;
+    width: 112px;
+    height: 112px;
+    background-image: url("../img/foto-curator@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/foto-curator@2x.png");
+      background-size: 112px;
+    }
+  }
+}
+
+.details__content {
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.87;
+}
+
+.details__cover {
+  width: 197px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details__curator {
+  @include marginnone;
+  color: $blue;
+}
+
+.details__firstname {
+  @include marginnone;
+}
+
+.details__address {
+  @include marginnone;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.details__map {
+  position: relative;
+  width: 56%;
+  min-height: 448px;
+  margin-top: -40px;
+
+  &::after {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 18px;
+    height: 28px;
+    background-image: url("../img/poinet-b.png");
+    background-size: contain;
+  }
+}
+
+.details__imap {
+  position: relative;
+  width: 702px;
+  height: 448px;
+  mask-image: url("../img/mask.svg");
+  background-color: $white;
+  z-index: 2;
+}
+
+.details__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 702px;
+  height: 448px;
+}
+
+.details__cont {
+  width: 1142px;
+  min-height: 107px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details__text {
+  width: 365px;
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details__request {
+  width: 355px;
+  @include marginnone;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  opacity: 0.87;
+}
+
+.details__security {
+  @include marginnone;
+  font-size: 13px;
+  line-height: 19px;
+  opacity: 0.5;
+}
+
+.details_form {
+  width: 764px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+}

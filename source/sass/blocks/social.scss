@@ -1,0 +1,32 @@
+.social {
+  width: 104px;
+  min-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &--details {
+    width: 96px;
+    @include marginnone;
+  }
+}
+
+.social__item {
+    @include marginnone;
+}
+
+.social__icon {
+  opacity: 0.16;
+}
+
+.social__link {
+
+  &:hover,
+  &:focus {
+
+    .social__icon {
+      opacity: 0.6;
+    }
+  }
+}

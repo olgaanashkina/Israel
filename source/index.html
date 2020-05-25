@@ -101,172 +101,359 @@
     </section>
     <section class="page-main__callback callback">
       <h2 class="callback__head visually-hidden">Заказать обратный звонок</h2>
-      <p class="callback__title">Хочу поехать!</p>
-      <p class="callback__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
-      <form class="callback__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="callback__input" name="telephone" type="text" id="callback" value="" placeholder="Телефон" maxlength="16" required="required">
-        <label class="callback__label" for="callback">перезвоните мне</label>
-      </form>
+      <div class="callback__wrap">
+        <p class="callback__title">Хочу поехать!</p>
+        <p class="callback__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+        <form class="callback__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="callback__input" name="telephone" type="text" id="callback" value="" placeholder="телефон" maxlength="16" required="required">
+          <label class="visually-hidden" for="callback">Введите телефон</label>
+          <button class="callback__button" type="submit" name="button">перезвоните мне</button>
+        </form>
+      </div>
     </section>
     <section class="page-main__conditions conditions">
-      <h2 class="conditions__head">Как поехать</h2>
-      <p class="conditions__content">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-      <p class="conditions__text">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
-      <ul class="conditions__list">
-        <li class="conditions__item">Быть в возрасте от 16 до 30 лет</li>
-        <li class="conditions__item">Иметь оконченное среднее образование</li>
-        <li class="conditions__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</li>
-        <li class="conditions__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
-      </ul>
-      <p class="conditions__remark">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
+      <div class="conditions__wrap">
+        <h2 class="conditions__head">Как поехать</h2>
+        <p class="conditions__content">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+        <p class="conditions__text">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:</p>
+        <ul class="conditions__list">
+          <li class="conditions__item">Быть в возрасте от 16 до 30 лет</li>
+          <li class="conditions__item">Иметь оконченное среднее образование</li>
+          <li class="conditions__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</li>
+          <li class="conditions__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
+        </ul>
+        <p class="conditions__remark">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
+      </div>
     </section>
     <section class="page-main__advantages advantages">
       <h2 class="advantages__head">Жизнь в израиле</h2>
       <p class="advantages__content">Помимо учёбы, в рамках программы у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
       <div class="advantages__wrap">
-        <div class="advantages__unit">
+        <div class="advantages__unit advantages__unit--first show">
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/trip-mob@1x.webp 1x, img/trip-mob@2x.webp 2x">
             <source type="image/webp" srcset="img/trip-desctop@1x.webp 1x, img/trip-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/trip-mob@1x.jpg 1x, img/trip-mob@2x.jpg 2x">
-            <img src="img/trip-desctop@1x.jpg" srcset="img/trip-desctop@2x.jpg 2x" width="482" height="732" alt="Фото Купола Скалы">
+            <source media="(max-width: 767px)" srcset="img/trip-mob@1x.png 1x, img/trip-mob@2x.png 2x">
+            <img src="img/trip-desctop@1x.png" srcset="img/trip-desctop@2x.png 2x" width="482" height="732" alt="Фото Купола Скалы">
           </picture>
-          <p class="advantages__title">Экскурсии по Израилю  и знакомство с его историей</p>
+          <p>Экскурсии по Израилю  и знакомство с его историей</p>
         </div>
-        <div class="advantages__unit">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/hebrew-mob@1x.webp 1x, img/hebrew-mob@2x.webp 2x">
-            <source type="image/webp" srcset="img/hebrew-desctop@1x.webp 1x, img/hebrew-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/hebrew-mob@1x.jpg 1x, img/hebrew-mob@2x.jpg 2x">
-            <img src="img/hebrew-desctop@1x.jpg" srcset="img/hebrew-desctop@2x.jpg 2x" width="211" height="318" alt="Фото студента">
-          </picture>
-          <p class="advantages__title">Изучение иврита</p>
-        </div>
-        <div class="advantages__unit">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/study-mob@1x.webp 1x, img/study-mob@2x.webp 2x">
-            <source type="image/webp" srcset="img/study-desctop@1x.webp 1x, img/study-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/study-mob@1x.jpg 1x, img/study-mob@2x.jpg 2x">
-            <img src="img/study-desctop@1x.jpg" srcset="img/study-desctop@2x.jpg 2x" width="411" height="318" alt="Фото студентов за компьютером">
-          </picture>
-          <p class="advantages__title">Обучение современным навыкам и профессиям</p>
-        </div>
-        <div class="advantages__unit">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/creation-mob@1x.webp 1x, img/creation-mob@2x.webp 2x">
-            <source type="image/webp" srcset="img/creation-desctop@1x.webp 1x, img/creation-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/creation-mob@1x.jpg 1x, img/creation-mob@2x.jpg 2x">
-            <img src="img/creation-desctop@1x.jpg" srcset="img/creation-desctop@2x.jpg 2x" width="411" height="318" alt="Фото улыбающихся студентов">
-          </picture>
-          <p class="advantages__title">Совместные творческие проекты с израильской молодёжью</p>
-        </div>
-        <div class="advantages__unit">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/leader-mob@1x.webp 1x, img/leader-mob@2x.webp 2x">
-            <source type="image/webp" srcset="img/leader-desctop@1x.webp 1x, img/leader-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/leader-mob@1x.jpg 1x, img/leader-mob@2x.jpg 2x">
-            <img src="img/leader-desctop@1x.jpg" srcset="img/leader-desctop@2x.jpg 2x" width="214" height="318" alt="Фото человека на вершине">
-          </picture>
-          <p class="advantages__title">Развитие  лидерства</p>
-        </div>
-      </div>
-    </section>
-    <section class="page-main__blogs blogs">
-      <h2 class="blogs__head visually-hidden">Блоги и фотодневники участников</h2>
-      <span class="blogs__hashtag">#masaisrael</span>
-      <p class="blogs__content">Познакомьтесь с программой  от первого лица! Многие участники ведут блоги и фотодневники  о жизни, учёбе и путешествиях в Израиле.</p>
-      <a class="blogs__link" href="#">смотреть фото</a>
-    </section>
-    <section class="page-main__questions questions">
-      <h2 class="questions__head">частые вопросы</h2>
-      <ul class="questions__list">
-        <li class="questions__item">
-          <h3 class="questions__title">Кто организатор? Какие сроки у программы?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-        <li class="questions__item">
-          <h3 class="questions__title">Что такое грант на обучение?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-        <li class="questions__item">
-          <h3 class="questions__title">Как определяется стоимость программы?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-        <li class="questions__item">
-          <h3 class="questions__title">Что такое грант на обучение?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-        <li class="questions__item">
-          <h3 class="questions__title">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-        <li class="questions__item">
-          <h3 class="questions__title">Как выглдядит полный процесс регистрации на программу «Маса»?</h3>
-          <p class="questions__content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-        </li>
-      </ul>
-    </section>
-    <section class="page-main__comments comments">
-      <h2 class="comments__head">Отзывы</h2>
-      <div class="comments__slider">
-        <div class="comments__slide">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
-            <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/foto-mob@1x.jpg 1x, img/foto-mob@2x.jpg 2x">
-            <img src="img/foto-desctop@1x.jpg" srcset="img/foto-desctop@2x.jpg 2x" width="364" height="480" alt="Фото Ольги Михайловой">
-          </picture>
-          <div class="comments__wrap">
-            <p class="comments__name">Ольга Михайлова</p>
-            <span class="comments__program">Программа:</span>
-            <p class="comments__nomination">Арт-Тель, февраль-сетнябрь 2017</p>
-            <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-            С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
-            <a href="#">Читать подробнее</a>
+        <div class="advantages__cont">
+          <div class="advantages__unit advantages__unit--second">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/hebrew-mob@1x.webp 1x, img/hebrew-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/hebrew-desctop@1x.webp 1x, img/hebrew-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/hebrew-mob@1x.png 1x, img/hebrew-mob@2x.png 2x">
+              <img src="img/hebrew-desctop@1x.png" srcset="img/hebrew-desctop@2x.png 2x" width="211" height="318" alt="Фото студента">
+            </picture>
+            <p>Изучение иврита</p>
+          </div>
+          <div class="advantages__unit advantages__unit--third">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/study-mob@1x.webp 1x, img/study-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/study-desctop@1x.webp 1x, img/study-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/study-mob@1x.png 1x, img/study-mob@2x.png 2x">
+              <img src="img/study-desctop@1x.png" srcset="img/study-desctop@2x.png 2x" width="411" height="318" alt="Фото студентов за компьютером">
+            </picture>
+            <p>Обучение современным навыкам и профессиям</p>
+          </div>
+          <div class="advantages__unit advantages__unit--fourth">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/creation-mob@1x.webp 1x, img/creation-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/creation-desctop@1x.webp 1x, img/creation-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/creation-mob@1x.png 1x, img/creation-mob@2x.png 2x">
+              <img src="img/creation-desctop@1x.png" srcset="img/creation-desctop@2x.png 2x" width="411" height="318" alt="Фото улыбающихся студентов">
+            </picture>
+            <p>Совместные творческие проекты  с израильской молодёжью</p>
+          </div>
+          <div class="advantages__unit advantages__unit--fifth">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/leader-mob@1x.webp 1x, img/leader-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/leader-desctop@1x.webp 1x, img/leader-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/leader-mob@1x.png 1x, img/leader-mob@2x.png 2x">
+              <img src="img/leader-desctop@1x.png" srcset="img/leader-desctop@2x.png 2x" width="214" height="318" alt="Фото человека на вершине">
+            </picture>
+            <p>Развитие  лидерства</p>
           </div>
         </div>
       </div>
-      <div class="comments__cont">
-        <button class="comments__left" type="button">Назад</button>
-        <button class="comments__right" type="button">Вперед</button>
-        <ul class="comments__social social">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Фейсбук">
-              <svg class="social__icon social__icon--fb" width="24" height="24">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
+      <div class="advantages__dots">
+        <button class="advantages__dot show-dot" type="button"></button>
+        <button class="advantages__dot" type="button"></button>
+        <button class="advantages__dot" type="button"></button>
+        <button class="advantages__dot" type="button"></button>
+        <button class="advantages__dot" type="button"></button>
+      </div>
+    </section>
+    <section class="page-main__blogs blogs">
+      <div class="blogs__wrap">
+        <h2 class="blogs__head visually-hidden">Блоги и фотодневники участников</h2>
+        <span class="blogs__hashtag">#masaisrael</span>
+        <p class="blogs__content">Познакомьтесь с программой <br> от первого лица! Многие участники ведут блоги и фотодневники  о жизни, учёбе и путешествиях в Израиле.</p>
+        <a class="blogs__link" href="#">смотреть фото</a>
+      </div>
+    </section>
+    <section class="page-main__questions questions">
+      <div class="questions__wrap">
+        <h2 class="questions__head">частые вопросы</h2>
+        <ol class="questions__list">
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Кто организатор? Какие сроки у программы?</h3>
+            <p class="questions__content content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Твиттер">
-              <svg class="social__icon social__icon--tw" width="24" height="24">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Что такое грант на обучение?</h3>
+            <p class="questions__content content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Инстаграмм">
-              <svg class="social__icon social__icon--inst" width="24" height="24">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Как определяется стоимость программы?</h3>
+            <p class="questions__content  content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Что такое грант на обучение?</h3>
+            <p class="questions__content content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h3>
+            <p class="questions__content content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__title accordion">Как выглядит полный процесс регистрации на программу «Маса»?</h3>
+            <p class="questions__content content">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="page-main__details details">
-      <h2 class="details__head">Узнать подробности</h2>
-      <p class="details__city city">Ваш город:
-        <select class="city__name" name="select" size="1" multiple>
-          <option class="city__item" value="s1">новосибирск</option>
-        </select>
-      </p>
-      <div class="details__wrap">
-        <p class="details__curator">Ваш куратор:</p>
-        <p class="details__firstname">Анна Горелик</p>
-        <p class="details__address">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
+    <section class="page-main__comments comments">
+      <div class="comments__container">
+        <h2 class="comments__head">Отзывы</h2>
+        <div class="comments__slider">
+          <div class="comments__slide show">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Ольга Михайлова</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <div class="comments__slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Ефим Лившиц</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <div class="comments__slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Ида Рубинштейн</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <div class="comments__slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Давид Михельсон</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <div class="comments__slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Иван Сидоров</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <div class="comments__slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/foto-mob@1x.webp 1x, img/foto-mob@2x.webp 2x">
+              <source type="image/webp" srcset="img/foto-desctop@1x.webp 1x, img/foto-desctop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/foto-mob@1x.png 1x, img/foto-mob@2x.png 2x">
+              <img src="img/foto-desctop@1x.png" srcset="img/foto-desctop@2x.png 2x" width="364" height="480" alt="Фото Ольги Михайловой">
+            </picture>
+            <div class="comments__wrap">
+              <p class="comments__name">Мария Цукерман</p>
+              <div class="comments__wrapper">
+                <p class="comments__program">Программа:</p>
+                <p class="comments__nomination">Арт-Тель, февраль-сентябрь 2017</p>
+              </div>
+              <p class="comments__content">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+              <p class="comments__content">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
+              <a class="comments__link" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="comments__cont">
+          <div class="comments__counter">
+            <p class="comments__count">3</p>
+            <span class="comments__slash">/</span>
+            <p class="comments__amount">6</p>
+          </div>
+          <div class="comments__buttons">
+            <button class="comments__button comments__button--left" type="button" aria-label="Листать влево"></button>
+            <button class="comments__button comments__button--right" type="button" aria-label="Листать вправо"></button>
+          </div>
+          <ul class="comments__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Фейсбук">
+                <svg class="social__icon social__icon--fb" width="24" height="24">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Твиттер">
+                <svg class="social__icon social__icon--tw" width="24" height="24">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Инстаграмм">
+                <svg class="social__icon social__icon--inst" width="24" height="24">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="details__social social">
+    </section>
+    <section class="page-main__details details">
+      <div class="details__envelope">
+        <h2 class="details__head">Узнать подробности</h2>
+        <div class="details__container">
+          <div class="details__wrapper">
+            <p class="details__city city">Ваш город:
+              <select class="city__name" name="select" size="1" multiple>
+                <option class="city__item" value="s1">новосибирск</option>
+              </select>
+            </p>
+            <div class="details__wrap">
+              <div class="details__cover">
+                <p class="details__curator">Ваш куратор:</p>
+                <p class="details__firstname">Анна Горелик</p>
+              </div>
+              <p class="details__address">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
+              <ul class="details__social social social--details">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Фейсбук">
+                    <svg class="social__icon social__icon--fb" width="24" height="24">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Вотсап">
+                    <svg class="social__icon social__icon--wa" width="24" height="24">
+                      <use xlink:href="#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Телеграмм">
+                    <svg class="social__icon social__icon--tg" width="24" height="24">
+                      <use xlink:href="#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="details__content">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою!</p>
+          </div>
+          <div class="details__map">
+            <iframe class="details__imap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8351890697313!2d82.92595595127055!3d55.028580680269506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5dbac1b18ff%3A0xb19fdf59fc163a35!2z0JHQtdC50YIg0JzQtdC90LDRhdC10Lw!5e0!3m2!1sru!2sru!4v1589632737268!5m2!1sru!2sru" width="702" height="448" allowfullscreen></iframe>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mob.webp">
+                <source type="image/webp" srcset="img/map-desctop.webp">
+                <source media="(max-width: 767px)" srcset="img/map-mob.png">
+                <img class="details__image" src="img/map-desctop.png" width="702" height="448" alt="Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем">
+              </picture>
+          </div>
+        </div>
+        <div class="details__cont">
+          <div class="details__text">
+            <p class="details__request">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <p class="details__security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
+          </div>
+          <form class="details_form form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="form__input form__input--name" name="name" type="text" id="firstname" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
+            <label class="visually-hidden" for="firstname">Введите имя</label>
+            <input class="form__input form__input--phone" name="telephone" type="text" id="telephone" value="" placeholder="Телефон" maxlength="16" required="required">
+            <label class="visually-hidden" for="telephone">Введите телефон</label>
+            <button class="form__button" type="submit" name="button">перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <a class="page-footer__logo">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/graylogo-mob.webp">
+          <source type="image/webp" srcset="img/graylogo-desctop.webp">
+          <source media="(max-width: 767px)" srcset="img/graylogo-mob.png">
+          <img src="img/graylogo-desctop.png" width="85" height="27" alt="Логотип проекта Маса Израиль">
+        </picture>
+      </a>
+      <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
+      <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Фейсбук">
             <svg class="social__icon social__icon--fb" width="24" height="24">
@@ -275,76 +462,21 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Вотсап">
-            <svg class="social__icon social__icon--wa" width="24" height="24">
-              <use xlink:href="#icon-whatsapp"></use>
+          <a class="social__link" href="#" aria-label="Твиттер">
+            <svg class="social__icon social__icon--tw" width="24" height="24">
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Телеграмм">
-            <svg class="social__icon social__icon--tg" width="24" height="24">
-              <use xlink:href="#icon-telegram"></use>
+          <a class="social__link" href="#" aria-label="Инстаграмм">
+            <svg class="social__icon social__icon--inst" width="24" height="24">
+              <use xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <p class="details__content">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою!</p>
-      <div class="details__map">
-        <iframe class="details__imap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8351890697313!2d82.92595595127055!3d55.028580680269506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5dbac1b18ff%3A0xb19fdf59fc163a35!2z0JHQtdC50YIg0JzQtdC90LDRhdC10Lw!5e0!3m2!1sru!2sru!4v1589632737268!5m2!1sru!2sru" width="702" height="448" allowfullscreen></iframe>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mob.webp">
-            <source type="image/webp" srcset="img/map-desctop.webp">
-            <source media="(max-width: 767px)" srcset="img/map-mob.png">
-            <img src="img/map-desctop.png" width="702" height="448" alt="Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем">
-          </picture>
-      </div>
-      <div class="details__cont">
-        <p class="details__request">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-        <p class="details__security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
-        <form class="details_form form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="form__input form__input--name" name="name" type="text" id="firstname" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
-          <label class="visually-hidden" for="firstname">Введите имя</label>
-          <input class="form__input form__input--phone" name="telephone" type="text" id="telephone" value="" placeholder="Телефон" maxlength="16" required="required">
-          <label class="visually-hidden" for="telephone">Введите телефон</label>
-          <button class="form__button" type="submit" name="button">перезвоните мне</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo">
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="img/graylogo-mob.webp">
-        <source type="image/webp" srcset="img/graylogo-desctop.webp">
-        <source media="(max-width: 767px)" srcset="img/graylogo-mob.png">
-        <img src="img/graylogo-desctop.png" width="85" height="27" alt="Логотип проекта Маса Израиль">
-      </picture>
-    </a>
-    <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#" aria-label="Фейсбук">
-          <svg class="social__icon social__icon--fb" width="24" height="24">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#" aria-label="Твиттер">
-          <svg class="social__icon social__icon--tw" width="24" height="24">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#" aria-label="Инстаграмм">
-          <svg class="social__icon social__icon--inst" width="24" height="24">
-            <use xlink:href="#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </footer>
   <div class="overlay">
   </div>

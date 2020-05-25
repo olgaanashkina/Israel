@@ -1,0 +1,31 @@
+.page-footer {
+  width: 100%;
+  min-width: 1024px;
+  min-height: 75px;
+  @include center;
+  display: flex;
+  border-top: 1px solid rgba(72, 72, 72, 0.2);;
+}
+
+.page-footer__wrap {
+  width: 83.6%;
+  @include center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+}
