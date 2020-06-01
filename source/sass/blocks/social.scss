@@ -1,6 +1,7 @@
 .social {
   width: 104px;
   min-height: 24px;
+  @include marginnone;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +10,15 @@
   &--details {
     width: 96px;
     @include marginnone;
+    margin-left: -2px;
+  }
+
+  &--comments {
+    margin-left: auto;
+  }
+
+  &--footer {
+    width: 118px;
   }
 }
 
@@ -29,4 +39,23 @@
       opacity: 0.6;
     }
   }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .social {
+
+    &--footer {
+      width: 136px;
+      min-height: 32px;
+    }
+
+    &--comments {
+      margin-left: 0;
+    }
+  }
+
 }

@@ -20,19 +20,20 @@
   &::before {
     position: absolute;
     content: "";
-    top: 150px;
+    top: 140px;
     left: 0;
-    width: 167px;
-    height: 226px;
+    width: 190px;
+    height: 257px;
     background-image: url("../img/backpack-desctop.png");
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
 .callback__wrap {
   width: 477px;
   min-height: 254px;
-  margin-left: 13%;
+  margin-left: 15.3%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,8 +41,8 @@
 
 .callback__title {
   @include marginnone;
-  margin-top: 75px;
-  margin-bottom: 24px;
+  margin-top: 80px;
+  margin-bottom: 5px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -83,8 +84,19 @@
   border: 2px solid $ight-gray;
   box-sizing: border-box;
   border-radius: 80px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $yellow;
+  }
 
   &::placeholder {
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 0.02em;
     opacity: 0.5;
   }
 }
@@ -98,14 +110,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
   font-variant: small-caps;
+  letter-spacing: 0.02em;
   color: $white;
   background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
   border-radius: 80px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+  }
+
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -151,7 +173,7 @@
   .callback {
     width: 100%;
     max-width: 767px;
-    min-height: 599px;
+    min-height: 614px;
     margin-bottom: 80px;
     justify-content: flex-start;
     background-image: url("../img/flag-mob@1x.jpg");
@@ -188,6 +210,7 @@
     width: 287px;
     @include marginnone;
     margin-top: 15px;
+    margin-bottom: 8px;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -206,6 +229,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .callback__input {
@@ -214,7 +238,7 @@
   }
 
   .callback__button {
+    width: 264px;
     position: relative;
-    width: 287px;
   }
 }

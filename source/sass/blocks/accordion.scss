@@ -4,13 +4,13 @@
   &::before {
     position: absolute;
     content: "";
-    top: 14px;
-    right: 20px;
+    top: 9px;
+    right: 36px;
     width: 15px;
     height: 8px;
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -23,13 +23,13 @@
     content: "";
     position: absolute;
     content: "";
-    top: 14px;
-    right: 20px;
+    top: 10px;
+    right: 36px;
     width: 15px;
     height: 8px;
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: rotate(180deg);
   }
 }
@@ -48,15 +48,33 @@
   }
 }
 
-  .accordion__content {
-    display: none;
-  }
+.accordion__content {
+  display: none;
+}
 
-  .accordion-open + .content {
-    display: block;
-  }
-
+.accordion-open + .content {
+  display: block;
+}
 
 .accordion-opened + .content {
   display: block;
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .accordion {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 25px;
+      right: 0;
+      width: 15px;
+      height: 8px;
+      background-image: url("../img/icon-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
   }
+}

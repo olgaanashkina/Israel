@@ -3,12 +3,14 @@
   max-width: 1366px;
   min-height: 950px;
   @include center;
-  margin-bottom: 96px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../img/watercolor-watch.png");
   background-repeat: no-repeat;
+  background-position: left top -50px;
+  background-size: contain;
 }
 
 .advantages__head {
@@ -29,24 +31,26 @@
   width: 720px;
   @include marginnone;
   @include center;
+  padding-right: 15px;
   font-size: 17px;
   line-height: 29px;
   opacity: 0.87;
+  text-align: right;
 }
 
 .advantages__wrap {
-  max-width: 1149px;
+  max-width: 1160px;
   width: 100%;
   min-height: 732px;
   @include center;
-  margin-top: -20px;
+  margin-top: -25px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .advantages__cont {
-  max-width: 655px;
+  max-width: 670px;
   width: 57%;
   min-height: 666px;
   display: flex;
@@ -68,42 +72,56 @@
 
 .advantages__unit {
   position: relative;
+  margin-bottom: 20px;
 
   &--first {
     width: 42%;
   }
 
-  &--second,
+  &--second {
+    width: 33%;
+    margin-right: 2%;
+  }
+
+  &--third {
+    width: 64%;
+  }
+
+  &--fourth {
+    width: 65%;
+    margin-right: 1%;
+  }
+
   &--fifth {
     width: 34%;
   }
 
-  &--third,
-  &--fourth {
-    width: 66%;
-  }
-
   &--first p {
+    @include marginnone;
     left: 8.3%;
     width: 66.4%;
   }
 
   &--second p {
+    @include marginnone;
     left: 11.4%;
     width: 56.9%;
   }
 
   &--third p {
+    @include marginnone;
     left: 7.8%;
     width: 77.9%;
   }
 
   &--fourth p {
+    @include marginnone;
     left: 7.8%;
     width: 87.6%;
   }
 
   &--fifth p {
+    @include marginnone;
     left: 11.2%;
     width: 56.1%;
   }
@@ -180,12 +198,12 @@
     width: 100%;
     max-width: 767px;
     min-height: 700px;
-    margin-bottom: 40px;
+    margin-bottom: 53px;
     background-image: none;
   }
 
   .advantages__head {
-    width: 70%;
+    width: 60%;
     margin-top: 0;
     margin-bottom: 24px;
     font-size: 32px;
@@ -195,14 +213,16 @@
   .advantages__content {
     min-width: 280px;
     width: 90%;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+    padding-left: 14px;
     font-size: 16px;
     line-height: 26px;
+    text-align: left;
   }
 
   .advantages__wrap {
     width: 288px;
-    min-height: 424px;
+    min-height: 420px;
     @include center;
     margin-top: 0;
     display: flex;
@@ -213,7 +233,7 @@
 
   .advantages__cont {
     width: 288px;
-    min-height: 424px;
+    min-height: 420px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -223,7 +243,7 @@
     display: none;
     width: 288px;
     min-height: 400px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .advantages__unit img {
@@ -235,8 +255,8 @@
     position: absolute;
     width: 230px;
     min-height: 21px;
-    bottom: 24px;
-    left: calc((288 - 230) / 2;
+    bottom: 27px;
+    left: 29px;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -255,22 +275,30 @@
   }
 
   .advantages__dot {
-    width: 6px;
-    height: 6px;
-    border: none;
-    background: transparent;
+    width: 8px;
+    height: 8px;
     background-image: url("../img/dot.svg");
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
+      background-image: url("../img/dot-g.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .advantages__dot.show-dot {
     width: 8px;
     height: 8px;
-    border: none;
-    background: transparent;
+    background-color: transparent;
     background-image: url("../img/dot-g.svg");
     background-size: contain;
     background-repeat: no-repeat;

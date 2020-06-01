@@ -2,7 +2,7 @@
   max-width: 1366px;
   min-height: 505px;
   @include center;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/sketch-desctop.png");
@@ -14,7 +14,7 @@
   max-width: 860px;
   min-height: 456px;
   margin-top: 48px;
-  margin-left: 12%;
+  margin-left: 15.3%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,7 +23,7 @@
 .programs__head {
   min-width: 300px;
   @include marginnone;
-  margin-bottom: 45px;
+  margin-bottom: 64px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -74,13 +74,14 @@
     width: 100%;
     max-width: 767px;
     min-height: 525px;
-    margin-bottom: 80px;
+    margin-bottom: 46px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("../img/sketch-mob.png");
     background-repeat: no-repeat;
     background-position: center right;
+    overflow: hidden;
   }
 
   .programs__wrap {
@@ -92,7 +93,7 @@
   }
 
   .programs__head {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-size: 32px;
     line-height: 39px;
     text-align: center;

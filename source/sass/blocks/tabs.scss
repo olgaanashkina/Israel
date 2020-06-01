@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 324px;
   display: flex;
-  justify-content: space-between;
 }
 
 .tabs__nav {
@@ -10,7 +9,7 @@
   @include marginnone;
   max-width: 230px;
   min-height: 324px;
-  margin-right: 110px;
+  margin-right: 105px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,14 +18,16 @@
 .tabs__title {
   position: relative;
   @include marginnone;
-  max-width: 194px;
-  width: 86%;
+  max-width: 128px;
+  width: 71%;
   height: 68px;
+  margin-bottom: 5px;
   padding-left: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: none;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -68,7 +69,6 @@
   font-size: 16px;
   line-height: 19px;
   font-variant: small-caps;
-  text-transform: uppercase;
   color: $white;
   background: linear-gradient(138.15deg, $yellow 20.46%, $light-yellow 65.31%);
 
@@ -76,11 +76,12 @@
     position: absolute;
     content: "";
     top: 16px;
-    left: 15px;
+    left: 20px;
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
   }
 
   &::after {
@@ -89,7 +90,7 @@
     width: 0;
     height: 0;
     top: 0;
-    right: -33.5px;
+    right: -34.5px;
     border: 34px solid transparent;
     border-left-color: $light-yellow;
     border-right: 0;
@@ -148,8 +149,8 @@
 
 .tabs__item h3 {
   @include marginnone;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 17px;
+  margin-bottom: 22px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 28px;
@@ -161,9 +162,13 @@
 
 .tabs__item p {
   @include marginnone;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   line-height: 26px;
   opacity: 0.87;
+
+  &:last-child {
+    max-width: 515px;
+  }
 }
 
 .is-active {
@@ -172,7 +177,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .tabs__nav {
-    margin-right: 0px;
+    margin-right: 80px;
   }
 
   .tabs__content {
@@ -191,6 +196,21 @@
 
   .tabs__item p {
     line-height: 24px;
+  }
+
+  .tabs__title.is-active {
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 0;
+      right: -34.5px;
+      border: 34.1px solid transparent;
+      border-left-color: $light-yellow;
+      border-right: 0;
+    }
   }
 
   .is-active {
@@ -214,8 +234,13 @@
     margin-right: 0px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   .tabs__content {
@@ -233,6 +258,7 @@
   }
 
   .tabs__item h3 {
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 29px;
   }
@@ -271,6 +297,7 @@
   }
 
   .tabs__title.is-active {
+    border-radius: 60.6704px;
     opacity: 1;
 
     &::before {

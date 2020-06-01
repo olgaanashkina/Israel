@@ -1,3 +1,204 @@
 .success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+  min-height: 880px;
+}
+
+.success__closed {
   display: none;
+}
+
+.success__open {
+  display: block;
+}
+
+.success__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+  min-height: 768px;
+  background-color: rgba(229, 229, 229, 0.95);
+  overflow: auto;
+}
+
+.success__wrap {
+  position: relative;
+  width: 480px;
+  min-height: 521px;
+  @include center;
+  margin-top: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 3px rgba(7, 7, 7, 0.36);
+}
+
+.success__cont {
+  width: 416px;
+  min-height: 377px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 120px;
+    left: 206px;
+    width: 66px;
+    height: 64px;
+    background-image: url("../img/ok.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.success__close {
+  width: 18px;
+  height: 17px;
+  margin-bottom: 167px;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.success__head {
+  min-height: 34px;
+  @include marginnone;
+  margin-bottom: 16px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: $blue;
+  text-align: center;
+}
+
+.success__content {
+  width: 360px;
+  min-height: 52px;
+  @include marginnone;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 26px;
+  color: $wet-asphalt;
+  opacity: 0.87;
+  text-align: center;
+}
+
+.success__ok {
+  width: 264px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+  border: none;
+  border-radius: 80px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+  }
+
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 10;
+    width: 100%;
+    min-height: 768px;
+  }
+
+  .success__wrap {
+    position: relative;
+    width: 320px;
+    min-height: 768px;
+    @include center;
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .success__cont {
+    position: relative;
+    width: 288px;
+    min-height: 452px;
+    @include center;
+    margin-top: 24px;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 177px;
+      left: 114px;
+      width: 66px;
+      height: 64px;
+      background-image: url("../img/ok.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .success__close {
+    margin-right: 5px;
+    margin-bottom: 255px;
+  }
+
+  .success__head {
+    min-height: 29px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .success__content {
+    width: 287px;
+    min-height: 68px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
 }

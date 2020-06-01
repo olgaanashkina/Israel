@@ -4,11 +4,13 @@
   max-width: 1366px;
   min-height: 565px;
   @include center;
+  margin-bottom: 82px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/watercolor-scetch.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: right -20px bottom -40px;
 }
 
 .comments__container {
@@ -24,6 +26,8 @@
 .comments__head {
   @include marginnone;
   @include center;
+  margin-bottom: 20px;
+  padding-left: 90px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -31,7 +35,6 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: $blue;
-  text-align: center;
 }
 
 .comments__slider {
@@ -61,8 +64,12 @@
   transition: opacity 1s;
 }
 
+.comments__image {
+  margin-top: -8px;
+}
+
 .comments__wrap {
-  width: 680px;
+  width: 675px;
   min-height: 359px;
   margin-left: auto;
   display: flex;
@@ -104,7 +111,7 @@
 .comments__content {
   width: 100%;
   @include marginnone;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: 17px;
   line-height: 29px;
   opacity: 0.74;
@@ -116,19 +123,24 @@
   line-height: 25px;
   text-decoration-line: underline;
   color: $blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .comments__cont {
-  width: 49.7%;
-  margin-top: -50px;
+  width: 49.9%;
+  margin-top: -38px;
   margin-left: 36.5%;
   display: flex;
 }
 
 .comments__counter {
-  width: 36px;
+  width: 39px;
   min-height: 26px;
-  margin-right: 24px;
+  margin-right: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,7 +155,7 @@
 }
 
 .comments__buttons {
-  width: 46px;
+  width: 44px;
   min-height: 15px;
   display: flex;
   justify-content: space-between;
@@ -269,12 +281,13 @@
   .comments__container {
     max-width: 767px;
     width: 90%;
-    min-height: 1054px;
+    min-height: 1028px;
     @include center;
   }
 
   .comments__head {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    padding-left: 0;
     font-size: 32px;
     line-height: 39px;
   }
@@ -311,7 +324,7 @@
   .comments__slide img {
     width: 240px;
     height: 320px;
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .comments__wrap {
@@ -343,13 +356,14 @@
   .comments__content {
     width: 100%;
     @include marginnone;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     font-size: 16px;
     line-height: 26px;
     opacity: 0.74;
   }
 
   .comments__link {
+    margin-top: 3px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -365,7 +379,7 @@
   .comments__counter {
     position: absolute;
     top: 390px;
-    left: 33%;
+    left: 35%;
   }
 
   .comments__buttons {

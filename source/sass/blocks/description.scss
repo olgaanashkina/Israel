@@ -1,5 +1,6 @@
 .description {
   min-height: 755px;
+  margin-top: -7px;
   margin-bottom: 55px;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@
 }
 
 .description__content {
-  width: 720px;
+  width: 710px;
   @include marginnone;
   font-size: 17px;
   line-height: 29px;
@@ -44,7 +45,7 @@
   position: relative;
   width: 870px;
   height: 460px;
-  margin-top: 48px;
+  margin-top: 44px;
 
   &::before {
     position: absolute;
@@ -134,7 +135,7 @@
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
   .description {
     min-height: 517px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .description__head {
@@ -147,7 +148,7 @@
     width: 70%;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
+    text-align: left;
   }
 
   .description__video {
@@ -168,8 +169,8 @@
     &::before {
       width: 80px;
       height: 80px;
-      top: calc(50% - 80px/2);
-      left: calc(50% - 80px/2);
+      top: calc(53.5% - 80px/2);
+      left: calc(50.5% - 80px/2);
       background-size: contain;
     }
 
