@@ -1,9 +1,9 @@
 'use strict';
 
-//Попап форма
+// Попап форма
 
 var ESC_KEYCODE = 27;
-var renderModal = function (classPopup, classClosed, classOpen, overlay, buttonClosed, buttonOk=null) {
+var renderModal = function (classPopup, classClosed, classOpen, overlay, buttonClosed, buttonOk) {
   var overflow = document.querySelector('body');
   var modal = document.querySelector(classPopup);
   if (modal.classList.contains(classClosed)) {
@@ -30,17 +30,15 @@ var renderModal = function (classPopup, classClosed, classOpen, overlay, buttonC
       modal.classList.add(classClosed);
     }
   });
-  if (!!window.MSInputMethodContext && !!document.documentMode) {
-    true;
-  } else {
-    document.addEventListener('click', function (evt) {
-      if (evt.target.matches(overlay)) {
-        modal.classList.remove(classOpen);
-        overflow.classList.remove('scroll-hidden');
-        modal.classList.add(classClosed);
-      }
-    });
-  }
+
+  document.addEventListener('click', function (evt) {
+    if (evt.target.matches(overlay)) {
+      modal.classList.remove(classOpen);
+      overflow.classList.remove('scroll-hidden');
+      modal.classList.add(classClosed);
+    }
+  });
+
   if (buttonOk != null) {
     var closedOk = modal.querySelector(buttonOk);
     closedOk.addEventListener('click', function (evt) {
@@ -51,7 +49,7 @@ var renderModal = function (classPopup, classClosed, classOpen, overlay, buttonC
       window.location.reload();
     });
   }
-}
+};
 
 var removeModal = function () {
   var overflow = document.querySelector('body');
@@ -61,7 +59,7 @@ var removeModal = function () {
     modal.classList.add('modal__closed');
     overflow.classList.remove('scroll-hidden');
   }
-}
+};
 
 var openModal = document.querySelector('.page-header__button');
 openModal.addEventListener('click', function (evt) {
@@ -72,23 +70,19 @@ openModal.addEventListener('click', function (evt) {
   var inputName = document.querySelector('.form__input--name-modal');
   var inputPhone = document.querySelector('.form__input--phone-modal');
 
-  if (!!window.MSInputMethodContext && !!document.documentMode) {
-    true;
-  } else {
-    inputName.value = localStorage.getItem('inputName');
-    inputPhone.value = addMask(removeMask(localStorage.getItem('inputPhone')));
-  }
+  inputName.value = localStorage.getItem('inputName');
+  inputPhone.value = addMask(removeMask(localStorage.getItem('inputPhone')));
 
   validationName(inputName);
   validationPhone(inputPhone);
 
-  form.addEventListener('submit', function (evt) {
-    if (inputPhone.value.length != 16) {
-      evt.preventDefault();
+  form.addEventListener('submit', function (event) {
+    if (inputPhone.value.length !== 16) {
+      event.preventDefault();
       inputPhone.focus();
       inputPhone.style.borderColor = 'red';
     } else {
-      evt.preventDefault();
+      event.preventDefault();
       renderModal('.success', 'success__closed', 'success__open', '.success__overlay', '.success__close', '.success__ok');
     }
     if (!!window.MSInputMethodContext && !!document.documentMode) {
@@ -102,14 +96,14 @@ openModal.addEventListener('click', function (evt) {
   });
 });
 
-//Табы в блоке Программы
+// Табы в блоке Программы
 
 var tabs = document.querySelectorAll('.tabs__title');
 
-tabs.forEach(function(tab) {
-  tab.addEventListener('click', function() {
+tabs.forEach(function (tab) {
+  tab.addEventListener('click', function () {
     var id = this.getAttribute('data-item');
-    var content = document.querySelector('.tabs__item[data-item="'+id+'"]');
+    var content = document.querySelector('.tabs__item[data-item="' + id + '"]');
     var activeTab = document.querySelector('.tabs__title.is-active');
     var activeContent = document.querySelector('.tabs__item.is-active');
 
@@ -121,22 +115,24 @@ tabs.forEach(function(tab) {
   });
 });
 
-//Аккордеон блок Частые вопросы
+// Аккордеон блок Частые вопросы
 
-var accordions = document.getElementsByClassName("accordion");
+var accordions = document.getElementsByClassName('accordion');
 var open = document.getElementsByClassName('accordion-open');
 for (var i = 0; i < accordions.length; i++) {
-  accordions[i].onclick = function() {
-    if (open.length > 0 && open[0] !== this)
+  accordions[i].onclick = function () {
+    if (open.length > 0 && open[0] !== this) {
       open[0].classList.remove('accordion-open');
-      this.classList.toggle('accordion-open');
-  }
+    }
+    this.classList.toggle('accordion-open');
+  };
 }
 
-//Слайдер блок Отзывы
+// Слайдер блок Отзывы
 
 document.addEventListener('DOMContentLoaded', function () {
-  var active = 0, prev = 0;
+  var active = 0;
+  var early = 0;
   var slides = document.getElementsByClassName('comments__slide');
   var arrows = document.getElementsByClassName('comments__button');
   var amount = document.querySelector('.comments__amount');
@@ -144,36 +140,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   amount.textContent = slides.length;
 
-  for(var i=0; i<arrows.length; i++) {
-    arrows[i].addEventListener('click', function(e) {
-      prev = active;
-      if(!!~e.target.classList[1].indexOf('left')) {
-        active-1 >= 0 ? --active : active = slides.length-1;
+  for (var n = 0; n < arrows.length; n++) {
+    arrows[n].addEventListener('click', function (e) {
+      early = active;
+      if (!!~e.target.classList[1].indexOf('left')) {
+        active - 1 >= 0 ? --active : active = slides.length - 1;
       } else {
-        active+1 <= slides.length-1 ? ++active : active = 0;
+        active + 1 <= slides.length - 1 ? ++active : active = 0;
       }
-      changeActiveSlide(prev);
-      count.textContent = active+1;
+      changeActiveSlide(early);
+      count.textContent = active + 1;
     });
   }
 
-  var changeActiveSlide = function(prev) {
-    slides[prev].classList.remove('show');
+  var changeActiveSlide = function (before) {
+    slides[before].classList.remove('show');
     slides[active].classList.add('show');
-  }
+  };
 });
 
-//Валидация полей формы
+// Валидация полей формы
 
 var validationName = function (inputName) {
-  if (!!window.MSInputMethodContext && !!document.documentMode) {
-    true;
-  } else {
-    inputName.oninput = function () {
-      localStorage.setItem('inputName', inputName.value);
-    }
-  }
-  inputName.addEventListener('invalid', function (evt) {
+  inputName.oninput = function () {
+    localStorage.setItem('inputName', inputName.value);
+  };
+
+  inputName.addEventListener('invalid', function () {
     if (inputName.validity.tooShort) {
       inputName.setCustomValidity('Имя должно быть не менее 3-х символов');
     } else if (inputName.validity.tooLong) {
@@ -186,75 +179,67 @@ var validationName = function (inputName) {
   });
   inputName.onblur = function () {
     inputName.style.borderColor = '#484848';
-  }
-}
+  };
+};
 
 var removeMask = function (input) {
-  if (input == null || input == '') {
+  if (input === null || input === '') {
     return '';
   }
-  if (input.substring(0, 4) == '+7(') {
-    input = input.substring(4);
+  if (input.substring(0, 3) === '+7(') {
+    input = input.substring(3);
   }
   var res = '';
-  for (var i = 0; i < input.length; i++) {
-    if (input[i] >= '0' && input[i] <= '9') {
-      res += input[i];
+  for (var l = 0; l < input.length; l++) {
+    if (input[l] >= '0' && input[l] <= '9') {
+      res += input[l];
     }
   }
   return res;
-}
+};
 
 var addMask = function (input) {
-  var mask = ['+', '7',  '(', ' ', ' ', ' ', ')',  ' ', ' ', ' ', '-', ' ', ' ', '-', ' ', ' '];
+  var mask = ['+', '7', '(', ' ', ' ', ' ', ')', ' ', ' ', ' ', '-', ' ', ' ', '-', ' ', ' '];
   var k = 0;
-  for (var i = 0; i < input.length; i++) {
+  for (var m = 0; m < input.length; m++) {
     for (var j = 0; j < mask.length; j++) {
-      if (mask[j] == ' ') {
-        mask[j] = input[i];
+      if (mask[j] === ' ') {
+        mask[j] = input[m];
         k = j;
         break;
       }
     }
   }
-  return k == 0 ? '' : mask.join('').substring(0, k+1);
-}
+  return k === 0 ? '' : mask.join('').substring(0, k + 1);
+};
 
 var validationPhone = function (inputPhone) {
   inputPhone.onfocus = function () {
-    if (inputPhone.value == '') {
+    if (inputPhone.value === '') {
       inputPhone.value = '+7(923)41';
     }
-  }
+  };
   inputPhone.oninput = function () {
     inputPhone.value = addMask(removeMask(inputPhone.value));
     inputPhone.style.borderColor = '#484848';
-    if (!!window.MSInputMethodContext && !!document.documentMode) {
-      true;
-    } else {
-      localStorage.setItem('inputPhone', removeMask(inputPhone.value));
-    }
-  }
-}
+    localStorage.setItem('inputPhone', removeMask(inputPhone.value));
+  };
+};
 
-//Валидация формы в футере
+// Валидация формы в футере
 
 var form = document.querySelector('.form');
 var inputName = document.querySelector('.form__input--name');
 var inputPhone = document.querySelector('.form__input--phone');
 
-if (!!window.MSInputMethodContext && !!document.documentMode) {
-  true;
-} else {
-  inputName.value = localStorage.getItem('inputName');
-  inputPhone.value = addMask(removeMask(localStorage.getItem('inputPhone')));
-}
+inputName.value = localStorage.getItem('inputName');
+inputPhone.value = addMask(removeMask(localStorage.getItem('inputPhone')));
 
 validationName(inputName);
 validationPhone(inputPhone);
 
 form.addEventListener('submit', function (evt) {
-  if (inputPhone.value.length != 16) {
+  if (inputPhone.value.length !== 16) {
     evt.preventDefault();
     inputPhone.focus();
     inputPhone.style.borderColor = 'red';
@@ -271,20 +256,20 @@ form.addEventListener('submit', function (evt) {
   }
 });
 
-//Валидация формы Хочу поехать
+// Валидация формы Хочу поехать
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var callback = document.querySelector('.callback__form');
-  var inputPhone = document.querySelector('.callback__input');
+  var inputTel = document.querySelector('.callback__input');
 
-  validationPhone(inputPhone);
+  validationPhone(inputTel);
 
   callback.addEventListener('submit', function (evt) {
-    if (inputPhone.value.length != 16) {
+    if (inputTel.value.length !== 16) {
       evt.preventDefault();
-      inputPhone.focus();
-      inputPhone.style.borderColor = 'red';
+      inputTel.focus();
+      inputTel.style.borderColor = 'red';
     } else {
       evt.preventDefault();
       renderModal('.success', 'success__closed', 'success__open', '.success__overlay', '.success__close', '.success__ok');
@@ -298,29 +283,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//Слайдер блок Жизнь в Израиле
+// Слайдер блок Жизнь в Израиле
 
-document.addEventListener('DOMContentLoaded', function() {
-  var active = 0, prev = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  var active = 0;
+  var prev = 0;
   var slides = document.getElementsByClassName('advantages__unit');
   var navs = document.getElementsByClassName('advantages__dot');
-  for(var i=0; i<navs.length; i++) {
-    (function(i) {
-      navs[i].addEventListener('click', function() {
+  for (var j = 0; j < navs.length; j++) {
+    (function (k) {
+      navs[k].addEventListener('click', function () {
         prev = active;
-        active = i;
+        active = k;
         changeActiveSlide(prev);
       });
-    })
-  (i);
+    })(j);
   }
 
-  var changeActiveSlide = function(prev) {
+  var changeActiveSlide = function (before) {
 
-    slides[prev].classList.remove('show');
+    slides[before].classList.remove('show');
     slides[active].classList.add('show');
 
-    navs[prev].classList.remove('show-dot');
+    navs[before].classList.remove('show-dot');
     navs[active].classList.add('show-dot');
-  }
+  };
 });

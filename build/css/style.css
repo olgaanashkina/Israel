@@ -1978,6 +1978,8 @@ a {
     font-weight: 800;
     font-size: 28px;
     background: linear-gradient(95.15deg, #ffc341 20.46%, #ffd701 65.31%);
+    -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent; }
 
 .questions__title {
@@ -2125,6 +2127,8 @@ a {
       font-weight: 800;
       font-size: 28px;
       background: linear-gradient(95.15deg, #ffc341 20.46%, #ffd701 65.31%);
+      -webkit-background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent; }
   .questions__title {
     width: 77.5%;
