@@ -2,7 +2,9 @@
   width: 100%;
   max-width: 1366px;
   min-height: 583px;
+
   @include center;
+
   margin-bottom: 57px;
   display: flex;
   justify-content: flex-end;
@@ -27,6 +29,7 @@
 
 .blogs__hashtag {
   @include marginnone;
+
   margin-bottom: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
@@ -40,7 +43,9 @@
 
 .blogs__content {
   width: 98%;
+
   @include marginnone;
+
   margin-bottom: 48px;
   font-size: 17px;
   line-height: 29px;
@@ -61,7 +66,7 @@
   line-height: 20px;
   font-variant: small-caps;
   color: $white;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   background: linear-gradient(142.39deg, $yellow 20.46%, $light-yellow 65.31%);
   border-radius: 80px;
 
@@ -72,7 +77,7 @@
     left: 40px;
     width: 24px;
     height: 24px;
-    background-image: url("../img/icon-instagram-w.png");
+    background-image: url("../img/instagram-w.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -99,7 +104,9 @@
 
   .blogs__wrap {
     width: 600px;
+
     @include marginnone;
+
     align-items: center;
   }
 
@@ -116,7 +123,9 @@
     width: 100%;
     max-width: 767px;
     min-height: 392px;
+
     @include center;
+
     margin-bottom: 80px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -133,7 +142,9 @@
 
   .blogs__wrap {
     width: 92.5%;
+
     @include center;
+
     align-items: center;
   }
 
@@ -147,7 +158,9 @@
 
   .blogs__content {
     width: 272px;
+
     @include marginnone;
+
     margin-bottom: 57px;
     font-size: 16px;
     line-height: 26px;

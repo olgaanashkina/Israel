@@ -2,7 +2,9 @@
   width: 100%;
   max-width: 1366px;
   min-height: 698px;
+
   @include center;
+
   display: flex;
   flex-direction: column;
   background-image: url("../img/watercolor-cart.png");
@@ -31,7 +33,9 @@
   max-width: 515px;
   width: 41%;
   min-height: 49px;
+
   @include marginnone;
+
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -91,6 +95,7 @@
 
 .details__content {
   @include marginnone;
+
   font-size: 17px;
   line-height: 29px;
   opacity: 0.87;
@@ -106,6 +111,7 @@
 
 .details__curator {
   @include marginnone;
+
   color: $blue;
 }
 
@@ -115,7 +121,9 @@
 
 .details__address {
   width: 250px;
+
   @include marginnone;
+
   font-size: 13px;
   line-height: 19px;
 }
@@ -177,7 +185,9 @@
 .details__request {
   max-width: 355px;
   width: 97%;
+
   @include marginnone;
+
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
@@ -186,15 +196,17 @@
 
 .details__security {
   width: 97%;
+
   @include marginnone;
+
   font-size: 13px;
   line-height: 19px;
   opacity: 0.5;
 }
 
-.details_form {
-  max-width: 764px;
-  width: 67%;
+.details__form {
+  max-width: 767px;
+  width: 67.1%;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -202,7 +214,9 @@
     width: 100%;
     max-width: 1023px;
     min-height: 385px;
+
     @include center;
+
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -214,7 +228,9 @@
     width: 90%;
     min-height: 385px;
     margin-left: 0;
+
     @include center;
+
     display: flex;
     flex-direction: column;
   }
@@ -230,7 +246,9 @@
   .details__container {
     width: 100%;
     min-height: 350px;
+
     @include center;
+
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -241,7 +259,9 @@
     width: 100%;
     min-height: 350px;
     margin-right: 0;
+
     @include center;
+
     margin-bottom: 0;
   }
 
@@ -250,6 +270,7 @@
     width: 100%;
     min-height: 448px;
     margin-top: 0;
+
     @include center;
   }
 
@@ -275,7 +296,9 @@
   .details__cont {
     width: 100%;
     min-height: 385px;
+
     @include center;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -294,14 +317,16 @@
   .details__request {
     max-width: 920px;
     width: 100%;
+
     @include marginnone;
+
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
     opacity: 0.87;
   }
 
-  .details_form {
+  .details__form {
     max-width: 920px;
     width: 100%;
   }
@@ -312,7 +337,9 @@
     width: 100%;
     max-width: 767px;
     min-height: 1462px;
+
     @include center;
+
     margin-bottom: 64px;
     display: flex;
     flex-direction: column;
@@ -324,7 +351,9 @@
     width: 100%;
     min-height: 1462px;
     margin-left: 0;
+
     @include center;
+
     display: flex;
     flex-direction: column;
   }
@@ -334,7 +363,9 @@
     width: 90%;
     font-size: 32px;
     min-height: 78px;
+
     @include center;
+
     margin-bottom: 24px;
     line-height: 39px;
     text-align: center;
@@ -343,7 +374,9 @@
   .details__container {
     width: 100%;
     min-height: 429px;
+
     @include center;
+
     margin-bottom: 14px;
     display: flex;
     flex-direction: column;
@@ -354,7 +387,9 @@
     width: 91%;
     min-height: 429px;
     margin-right: 0;
+
     @include center;
+
     margin-bottom: 40px;
   }
 
@@ -392,7 +427,9 @@
 
   .details__address {
     width: 280px;
+
     @include marginnone;
+
     font-size: 13px;
     line-height: 19px;
   }
@@ -400,7 +437,9 @@
 
   .details__content {
     width: 90%;
+
     @include marginnone;
+
     font-size: 16px;
     line-height: 26px;
   }
@@ -411,6 +450,7 @@
     width: 100%;
     min-height: 420px;
     margin-top: 0;
+
     @include center;
   }
 
@@ -419,7 +459,9 @@
     max-width: 660px;
     width: 100%;
     height: 420px;
+
     @include center;
+
     mask-image: url("../img/mask.svg");
     mask-position: top right;
   }
@@ -436,7 +478,9 @@
   .details__cont {
     width: 90%;
     min-height: 385px;
+
     @include center;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -460,7 +504,7 @@
     width: 100%;
   }
 
-  .details_form {
+  .details__form {
     max-width: 690px;
     width: 100%;
   }

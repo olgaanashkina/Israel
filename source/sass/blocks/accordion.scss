@@ -8,9 +8,10 @@
     right: 36px;
     width: 15px;
     height: 8px;
-    background-image: url("../img/icon-arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
   }
 }
 
@@ -20,23 +21,23 @@
   }
 
   &::after {
-    content: "";
     position: absolute;
     content: "";
     top: 10px;
     right: 36px;
     width: 15px;
     height: 8px;
-    background-image: url("../img/icon-arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotate(180deg);
+    cursor: pointer;
   }
 }
 
 .content {
-    display: none;
-  }
+  display: none;
+}
 
 .accordion-opened {
   &::before {
@@ -71,10 +72,30 @@
       right: 0;
       width: 15px;
       height: 8px;
-      background-image: url("../img/icon-arrow.svg");
+      background-image: url("../img/arrow.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom;
+    }
+  }
+
+  .accordion-open {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 25px;
+      right: 0;
+      width: 15px;
+      height: 8px;
+      background-image: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(180deg);
+      cursor: pointer;
     }
   }
 }

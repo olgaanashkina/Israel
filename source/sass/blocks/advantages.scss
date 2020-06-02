@@ -2,7 +2,9 @@
   width: 100%;
   max-width: 1366px;
   min-height: 950px;
+
   @include center;
+
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -16,6 +18,7 @@
 .advantages__head {
   @include marginnone;
   @include center;
+
   margin-bottom: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
@@ -29,8 +32,10 @@
 
 .advantages__content {
   width: 720px;
+
   @include marginnone;
   @include center;
+
   padding-right: 15px;
   font-size: 17px;
   line-height: 29px;
@@ -42,7 +47,9 @@
   max-width: 1160px;
   width: 100%;
   min-height: 732px;
+
   @include center;
+
   margin-top: -25px;
   display: flex;
   justify-content: space-between;
@@ -60,6 +67,7 @@
 
 .advantages__unit p {
   position: absolute;
+  left: 0;
   bottom: 40px;
   min-height: 50px;
   font-family: "Raleway", "Arial", sans-serif;
@@ -67,7 +75,7 @@
   font-size: 21px;
   line-height: 25px;
   color: $white;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .advantages__unit {
@@ -155,7 +163,9 @@
   .advantages__wrap {
     width: 655px;
     min-height: 1368px;
+
     @include center;
+
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -177,7 +187,9 @@
 
     &--first {
       width: 482px;
+
       @include center;
+
       margin-bottom: 30px;
     }
 
@@ -223,7 +235,9 @@
   .advantages__wrap {
     width: 288px;
     min-height: 420px;
+
     @include center;
+
     margin-top: 0;
     display: flex;
     flex-direction: row;

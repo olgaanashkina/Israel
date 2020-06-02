@@ -22,7 +22,9 @@
 
 .description__content {
   width: 710px;
+
   @include marginnone;
+
   font-size: 17px;
   line-height: 29px;
   text-align: center;
@@ -52,13 +54,12 @@
     content: "";
     width: 96px;
     height: 96px;
-    top: calc(50% - 96px/2);
-    left: calc(50% - 96px/2);
+    top: calc(50% - 96px / 2);
+    left: calc(50% - 96px / 2);
     z-index: 2;
     background-image: url("../img/play.png");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   &:hover::before,
@@ -68,8 +69,8 @@
     content: "";
     width: 96px;
     height: 96px;
-    top: calc(50% - 96px/2);
-    left: calc(50% - 96px/2);
+    top: calc(50% - 96px / 2);
+    left: calc(50% - 96px / 2);
     z-index: 2;
     background-image: url("../img/play-hover.png");
   }
@@ -80,8 +81,8 @@
     content: "";
     width: 96px;
     height: 96px;
-    top: calc(50% - 96px/2);
-    left: calc(50% - 96px/2);
+    top: calc(50% - 96px / 2);
+    left: calc(50% - 96px / 2);
     z-index: 2;
     background-image: url("../img/play-click.png");
   }
@@ -94,7 +95,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .description {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .description__head {
@@ -108,7 +109,9 @@
 
   .description__video {
     width: 100%;
+
     @include center;
+
     min-height: 604px;
     display: flex;
     justify-content: center;
@@ -169,8 +172,8 @@
     &::before {
       width: 80px;
       height: 80px;
-      top: calc(53.5% - 80px/2);
-      left: calc(50.5% - 80px/2);
+      top: calc(53.5% - 80px / 2);
+      left: calc(50.5% - 80px / 2);
       background-size: contain;
     }
 
@@ -178,16 +181,16 @@
     &:focus::before {
       width: 80px;
       height: 80px;
-      top: calc(50% - 80px/2);
-      left: calc(50% - 80px/2);
+      top: calc(50% - 80px / 2);
+      left: calc(50% - 80px / 2);
       background-size: contain;
     }
 
     &:active::before {
       width: 80px;
       height: 80px;
-      top: calc(50% - 80px/2);
-      left: calc(50% - 80px/2);
+      top: calc(50% - 80px / 2);
+      left: calc(50% - 80px / 2);
       background-size: contain;
     }
   }
@@ -196,5 +199,4 @@
     width: 320px;
     height: 224px;
   }
-
 }

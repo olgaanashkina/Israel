@@ -3,7 +3,9 @@
   width: 100%;
   max-width: 1366px;
   min-height: 565px;
+
   @include center;
+
   margin-bottom: 82px;
   display: flex;
   flex-direction: column;
@@ -55,12 +57,7 @@
   justify-content: space-between;
   opacity: 0;
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
   flex-wrap: nowrap;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -110,7 +107,9 @@
 
 .comments__content {
   width: 100%;
+
   @include marginnone;
+
   margin-bottom: 17px;
   font-size: 17px;
   line-height: 29px;
@@ -195,7 +194,9 @@
 
 .comments__social {
   width: 15.3%;
+
   @include marginnone;
+
   margin-left: auto;
   z-index: 3;
 }
@@ -212,7 +213,9 @@
     width: 95%;
     min-height: 360px;
     margin-left: 0;
+
     @include center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,6 +285,7 @@
     max-width: 767px;
     width: 90%;
     min-height: 1028px;
+
     @include center;
   }
 
@@ -312,12 +316,7 @@
     align-items: center;
     opacity: 0;
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
     transition: opacity 1s;
   }
 
@@ -330,6 +329,7 @@
   .comments__wrap {
     width: 288px;
     min-height: 567px;
+
     @include marginnone;
     @include center;
   }
@@ -355,7 +355,9 @@
 
   .comments__content {
     width: 100%;
+
     @include marginnone;
+
     margin-bottom: 18px;
     font-size: 16px;
     line-height: 26px;
@@ -370,8 +372,10 @@
 
   .comments__cont {
     width: 288px;
+
     @include marginnone;
     @include center;
+
     display: flex;
     justify-content: flex-start;
   }
@@ -390,7 +394,9 @@
 
   .comments__social {
     width: 15.3%;
+
     @include marginnone;
+
     z-index: 1;
   }
 }

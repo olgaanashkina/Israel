@@ -1,7 +1,9 @@
 .city {
   position: relative;
   width: 200px;
+
   @include marginnone;
+
   margin-top: 49px;
   margin-bottom: 39px;
   padding-left: 20px;
@@ -35,7 +37,9 @@
   position: relative;
   width: 105px;
   height: 24px;
+
   @include marginnone;
+
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -49,11 +53,8 @@
   border-bottom: 1px dashed $blue;
   background-color: transparent;
   vertical-align: baseline;
-}
-
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {

@@ -1,57 +1,69 @@
 .page-main {
   width: 100%;
+
   @include center;
+
   min-width: 1024px;
   background: transparent;
 }
 
 .page-main__slogan {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__description {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__programs {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__callback {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__conditions {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__advantages {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__blogs {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__questions {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__comments {
   width: 1366px;
+
   @include center;
 }
 
 .page-main__details {
   width: 1366px;
+
   @include center;
 }
 
@@ -155,6 +167,6 @@
   }
 
   .page-main__details {
-      max-width: 767px;
+    max-width: 767px;
   }
 }

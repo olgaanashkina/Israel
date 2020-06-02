@@ -2,14 +2,18 @@
   width: 100%;
   min-width: 1024px;
   min-height: 75px;
+
   @include center;
+
   display: flex;
   border-top: 1px solid rgba(72, 72, 72, 0.2);
 }
 
 .page-footer__wrap {
   width: 79.5%;
+
   @include center;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,12 +35,13 @@
 
   .page-footer__wrap {
     width: 80%;
+
     @include center;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
@@ -44,7 +49,9 @@
     width: 100%;
     min-width: 320px;
     min-height: 197px;
+
     @include center;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +60,9 @@
   .page-footer__wrap {
     width: 69%;
     min-height: 133px;
+
     @include center;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,5 +80,4 @@
     margin-bottom: 24px;
     text-align: center;
   }
-
 }

@@ -11,12 +11,3 @@ $yellow: #ffc341;
 $light-yellow: #ffd701;
 $blue: #1fc0fc;
 $ight-gray: #e3e3e3;
-
-@mixin marginnone {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin center {
-  margin: 0 auto;
-}

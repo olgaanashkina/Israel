@@ -3,7 +3,9 @@
   width: 100%;
   max-width: 1366px;
   min-height: 594px;
+
   @include center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +43,7 @@
 
 .callback__title {
   @include marginnone;
+
   margin-top: 80px;
   margin-bottom: 5px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -68,11 +71,11 @@
   justify-content: space-between;
 }
 
-.input:invalid {
+.callback__form input:invalid {
   box-shadow: none;
 }
 
-.callback__input {
+.callback__form input {
   width: 310px;
   min-height: 59px;
   padding: 0 40px;
@@ -84,6 +87,7 @@
   border: 2px solid $ight-gray;
   box-sizing: border-box;
   border-radius: 80px;
+  outline: none;
   cursor: pointer;
 
   &:hover,
@@ -101,7 +105,7 @@
   }
 }
 
-.callback__button {
+.callback__form button {
   position: absolute;
   top: 0;
   right: 0;
@@ -116,17 +120,19 @@
   font-variant: small-caps;
   letter-spacing: 0.02em;
   color: $white;
-  background: linear-gradient(140.64deg, #FFC341 20.46%, #FFD701 65.31%);
+  background: linear-gradient(140.64deg, #ffc341 20.46%, #ffd701 65.31%);
   border-radius: 80px;
   border: none;
+  outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+    background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
   }
 
   &:active {
-    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
   }
 }
 
@@ -149,11 +155,13 @@
   .callback__wrap {
     width: 750px;
     min-height: 254px;
+
     @include center;
   }
 
   .callback__title {
     @include marginnone;
+
     margin-top: 15px;
     margin-bottom: 24px;
     font-size: 36px;
@@ -201,14 +209,18 @@
   .callback__wrap {
     width: 287px;
     min-height: 295px;
+
     @include center;
+
     justify-content: flex-start;
     align-items: center;
   }
 
   .callback__title {
     width: 287px;
+
     @include marginnone;
+
     margin-top: 15px;
     margin-bottom: 8px;
     font-size: 32px;
@@ -232,12 +244,12 @@
     align-items: center;
   }
 
-  .callback__input {
+  .callback__form input {
     width: 287px;
     margin-bottom: 8px;
   }
 
-  .callback__button {
+  .callback__form button {
     width: 264px;
     position: relative;
   }

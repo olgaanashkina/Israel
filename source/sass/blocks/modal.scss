@@ -4,8 +4,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 10;
   width: 100%;
   min-height: 880px;
@@ -25,8 +24,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 10;
   width: 100%;
   min-height: 768px;
@@ -38,14 +36,16 @@
   position: relative;
   width: 480px;
   min-height: 521px;
+
   @include center;
+
   margin-top: 123px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: $white;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px 3px rgba(7, 7, 7, 0.36);
+  box-shadow: 0 4px 8px 3px rgba(7, 7, 7, 0.36);
 }
 
 .modal__cont {
@@ -72,7 +72,9 @@
 
 .modal__head {
   min-height: 34px;
+
   @include marginnone;
+
   margin-bottom: 16px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
@@ -85,7 +87,9 @@
 .modal__content {
   width: 360px;
   min-height: 78px;
+
   @include marginnone;
+
   margin-bottom: 32px;
   font-size: 15px;
   line-height: 26px;
@@ -93,8 +97,34 @@
   opacity: 0.87;
 }
 
-.modal__cont label {
+.modal__form {
+  width: 360px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.modal__form input {
+  width: 360px;
+  margin-bottom: 8px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  opacity: 0.87;
+}
+
+.modal__form button {
+  width: 264px;
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.modal__cont label {
   &:last-child {
     position: relative;
     width: 240px;
@@ -110,8 +140,17 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .modal__cont label {
+  .modal__form button {
+    width: 264px;
 
+    @include center;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+    align-self: center;
+  }
+
+  .modal__cont label {
     &:last-child {
       padding-left: 40px;
     }
@@ -125,8 +164,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     z-index: 10;
     width: 100%;
     min-height: 768px;
@@ -136,7 +174,9 @@
     position: relative;
     width: 320px;
     min-height: 768px;
+
     @include center;
+
     margin-top: 0;
     border-radius: 0;
   }
@@ -144,7 +184,9 @@
   .modal__cont {
     width: 288px;
     min-height: 575px;
+
     @include center;
+
     margin-top: 24px;
     align-items: center;
   }
@@ -168,12 +210,30 @@
     text-align: center;
   }
 
-  .modal__cont label {
+  .modal__form {
+    width: 288px;
+  }
 
+  .modal__form input {
+    width: 288px;
+  }
+
+  .modal__form button {
+    width: 264px;
+
+    @include center;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .modal__cont label {
     &:last-child {
       width: 240px;
       min-height: 40px;
+
       @include center;
+
       padding-left: 24px;
     }
   }

@@ -6,7 +6,9 @@
 
 .tabs__nav {
   list-style: none;
+
   @include marginnone;
+
   max-width: 230px;
   min-height: 324px;
   margin-right: 105px;
@@ -17,7 +19,9 @@
 
 .tabs__title {
   position: relative;
+
   @include marginnone;
+
   max-width: 128px;
   width: 71%;
   height: 68px;
@@ -41,23 +45,23 @@
   }
 
   &--star::before {
-    background-image: url("../img/icon-culture.svg");
+    background-image: url("../img/culture.svg");
   }
 
   &--study::before {
-    background-image: url("../img/icon-study.svg");
+    background-image: url("../img/study.svg");
   }
 
   &--bag::before {
-    background-image: url("../img/icon-business.svg");
+    background-image: url("../img/business.svg");
   }
 
   &--heart::before {
-    background-image: url("../img/icon-volonteur.svg");
+    background-image: url("../img/volonteur.svg");
   }
 
   &--lamp::before {
-    background-image: url("../img/icon-religion.svg");
+    background-image: url("../img/religion.svg");
   }
 }
 
@@ -99,37 +103,39 @@
 
 .tabs__title--star.is-active {
   &::before {
-    background-image: url("../img/icon-culture-w.svg");
+    background-image: url("../img/culture-w.svg");
   }
 }
 
 .tabs__title--study.is-active {
   &::before {
-    background-image: url("../img/icon-study-w.svg");
+    background-image: url("../img/study-w.svg");
   }
 }
 
 .tabs__title--bag.is-active {
   &::before {
-    background-image: url("../img/icon-business-w.svg");
+    background-image: url("../img/business-w.svg");
   }
 }
 
 .tabs__title--heart.is-active {
   &::before {
-    background-image: url("../img/icon-volonteur-w.svg");
+    background-image: url("../img/volonteur-w.svg");
   }
 }
 
 .tabs__title--lamp.is-active {
   &::before {
-    background-image: url("../img/icon-religion-w.svg");
+    background-image: url("../img/religion-w.svg");
   }
 }
 
 .tabs__content {
   list-style: none;
+
   @include marginnone;
+
   width: 560px;
   min-height: 285px;
   display: flex;
@@ -139,16 +145,16 @@
 
 .tabs__item {
   display: none;
+
   @include marginnone;
+
   width: 560px;
   min-height: 285px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .tabs__item h3 {
   @include marginnone;
+
   margin-top: 17px;
   margin-bottom: 22px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -162,6 +168,7 @@
 
 .tabs__item p {
   @include marginnone;
+
   margin-bottom: 17px;
   line-height: 26px;
   opacity: 0.87;
@@ -199,7 +206,6 @@
   }
 
   .tabs__title.is-active {
-
     &::after {
       position: absolute;
       content: "";
@@ -224,14 +230,14 @@
     min-height: 470px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
   }
 
   .tabs__nav {
     min-width: 320px;
     min-height: 48px;
-    margin-right: 0px;
+    margin-right: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -270,7 +276,9 @@
 
   .tabs__title {
     position: relative;
+
     @include marginnone;
+
     max-width: 181px;
     width: 86%;
     height: 48px;

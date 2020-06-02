@@ -3,13 +3,15 @@
   width: 100%;
   max-width: 1366px;
   min-height: 1030px;
+
   @include center;
+
   display: flex;
   align-items: center;
   background-image: url("../img/watercolor-spot.png");
   background-repeat: no-repeat;
   background-position: left top -40px;
-  overflow:hidden;
+  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -59,7 +61,9 @@
 
 .conditions__content {
   width: 480px;
+
   @include marginnone;
+
   margin-bottom: 34px;
   font-size: 15px;
   line-height: 26px;
@@ -68,7 +72,9 @@
 
 .conditions__text {
   width: 460px;
+
   @include marginnone;
+
   margin-bottom: 21px;
   font-weight: 500;
   font-size: 17px;
@@ -79,7 +85,9 @@
   position: relative;
   width: 480px;
   min-height: 274px;
+
   @include marginnone;
+
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
@@ -152,7 +160,7 @@
   padding-left: 16px;
   opacity: 0.5;
   border-left: 4px solid transparent;
-  border-image: linear-gradient(90deg, #FFC341 20.46%, #FFD701 65.31%);
+  border-image: linear-gradient(90deg, #ffc341 20.46%, #ffd701 65.31%);
   border-image-slice: 1;
 }
 
@@ -207,7 +215,9 @@
   .conditions__list {
     width: 100%;
     min-height: 240px;
+
     @include marginnone;
+
     margin-bottom: 34px;
     list-style: none;
     font-size: 15px;
@@ -233,7 +243,9 @@
     width: 100%;
     max-width: 767px;
     min-height: 738px;
+
     @include center;
+
     margin-bottom: 78px;
     background-image: none;
 
@@ -257,12 +269,15 @@
     min-width: 288px;
     width: 90%;
     min-height: 738px;
+
     @include center;
   }
 
   .conditions__head {
     width: 100%;
+
     @include marginnone;
+
     margin-bottom: 24px;
     font-size: 32px;
     line-height: 39px;
@@ -271,7 +286,9 @@
 
   .conditions__content {
     width: 100%;
+
     @include marginnone;
+
     margin-bottom: 24px;
     font-size: 14px;
     line-height: 22px;
@@ -288,7 +305,9 @@
   .conditions__list {
     width: 288px;
     min-height: 327px;
+
     @include center;
+
     margin-bottom: 0;
     font-size: 14px;
     line-height: 22px;
