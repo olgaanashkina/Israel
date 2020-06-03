@@ -55,6 +55,25 @@
   flex-direction: column;
 }
 
+.details__case {
+  position: relative;
+  width: 240px;
+  display: flex;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 54px;
+    right: 3px;
+    width: 16px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/marker.png");
+    background-size: contain;
+    z-index: 10;
+  }
+}
+
 .details__city {
   width: 250px;
   min-height: 24px;
@@ -391,6 +410,23 @@
     @include center;
 
     margin-bottom: 40px;
+  }
+
+  .details__case {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      right: 3px;
+      width: 16px;
+      height: 15px;
+      background-color: transparent;
+      background-image: url("../img/marker.png");
+      background-size: contain;
+      z-index: 10;
+    }
   }
 
   .details__city {
