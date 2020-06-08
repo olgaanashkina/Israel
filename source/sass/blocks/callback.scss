@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   background-image: url("../img/flag-desctop@1x.jpg");
   background-repeat: no-repeat;
   background-position: right;
@@ -33,9 +34,9 @@
 }
 
 .callback__wrap {
-  width: 477px;
+  width: 34.9%;
   min-height: 254px;
-  margin-left: 15.3%;
+  margin-right: 49.7%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -57,7 +58,7 @@
 }
 
 .callback__text {
-  width: 400px;
+  width: 83.9%;
   margin-bottom: 64px;
   font-size: 17px;
   line-height: 29px;
@@ -66,7 +67,8 @@
 
 .callback__form {
   position: relative;
-  width: 477px;
+  min-width: 425px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -78,7 +80,8 @@
 .callback__form input {
   width: 310px;
   min-height: 59px;
-  padding: 0 40px;
+  padding: 16px 0 14px 40px;
+  font-family: "Fira Sans", "Arial", sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -96,11 +99,10 @@
   }
 
   &::placeholder {
-    font-weight: 800;
-    font-size: 19px;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 20px;
     font-variant: small-caps;
-    letter-spacing: 0.02em;
     opacity: 0.5;
   }
 }
@@ -153,10 +155,12 @@
   }
 
   .callback__wrap {
-    width: 750px;
+    width: 45%;
     min-height: 254px;
 
     @include center;
+
+    margin-right: 50%;
   }
 
   .callback__title {
@@ -187,7 +191,7 @@
     background-image: url("../img/flag-mob@1x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: contain;
+    background-size: 320px 308px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -207,7 +211,7 @@
   }
 
   .callback__wrap {
-    width: 287px;
+    width: 89.7%;
     min-height: 295px;
 
     @include center;
@@ -229,14 +233,14 @@
   }
 
   .callback__text {
-    width: 287px;
+    width: 100%;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 26px;
   }
 
   .callback__form {
-    width: 287px;
+    min-width: 287px;
     min-height: 126px;
     display: flex;
     flex-direction: column;

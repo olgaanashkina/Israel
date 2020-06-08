@@ -11,6 +11,7 @@
   background-image: url("../img/watercolor-spot.png");
   background-repeat: no-repeat;
   background-position: left top -40px;
+  background-size: contain;
   overflow: hidden;
 
   &::before {
@@ -18,10 +19,11 @@
     content: "";
     top: 158px;
     left: 10px;
-    width: 581px;
-    height: 707px;
+    width: 42.5%;
+    height: 68.6%;
     background-image: url("../img/circs.png");
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &::after {
@@ -88,78 +90,79 @@
 
   @include marginnone;
 
-  margin-bottom: 28px;
+  margin-bottom: 22px;
+  margin-left: 3px;
   display: flex;
   flex-direction: column;
-  list-style: none;
+  list-style-type: none;
+  counter-reset: num;
   font-size: 15px;
   line-height: 21px;
   opacity: 0.87;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 40px;
-    left: 3px;
-    width: 1px;
-    height: 193px;
-    background-image: url("../img/line.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .conditions__item {
   position: relative;
-  min-height: 42px;
-  padding-left: 45px;
-  margin-bottom: 24px;
+  min-height: 40px;
+  padding-left: 42px;
+  padding-bottom: 26px;
   vertical-align: middle;
+  border-left: 1px dashed $ight-gray;
 
-  &:nth-child(1),
   &:nth-child(2) {
     padding-top: 10px;
   }
 
   &:nth-child(4) {
     padding-top: 14px;
+
+    &::before {
+      top: 16px;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 26px;
+  }
+
+  &:first-child {
+    margin-top: 10px;
+
+    &::before {
+      top: -5px;
+    }
   }
 
   &::before {
     position: absolute;
-    content: "";
-    top: -2px;
-    left: -22px;
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &:nth-child(1)::before {
-    background-image: url("../img/1.png");
-  }
-
-  &:nth-child(2)::before {
-    background-image: url("../img/2.png");
-  }
-
-  &:nth-child(3)::before {
-    background-image: url("../img/3.png");
-  }
-
-  &:nth-child(4)::before {
-    top: 6px;
-    background-image: url("../img/4.png");
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    top: 4px;
+    left: -18px;
+    width: 34px;
+    vertical-align: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+    color: $yellow;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    height: 34px;
   }
 }
 
 .conditions__remark {
   @include marginnone;
   position: relative;
-  width: 520px;
+  width: 92%;
   padding-left: 16px;
   opacity: 0.5;
-  border-left: 4px solid transparent;
+  border: none;
+  border-left: 4px solid rgba(0, 0, 0, 0.01);
   border-image: linear-gradient(90deg, #ffc341 20.46%, #ffd701 65.31%);
   border-image-slice: 1;
 }
@@ -169,6 +172,7 @@
     width: 100%;
     max-width: 1023px;
     min-height: 707px;
+    margin-bottom: 50px;
     background-size: cover;
 
     &::before {
@@ -176,6 +180,8 @@
       content: "";
       top: 150px;
       left: 0;
+      width: 581px;
+      height: 707px;
       background-size: 70%;
     }
 
@@ -189,8 +195,8 @@
   }
 
   .conditions__wrap {
-    width: 50%;
-    margin-left: 50%;
+    width: 43%;
+    margin-left: 52%;
   }
 
   .conditions__head {
@@ -229,8 +235,11 @@
     min-height: 42px;
     position: relative;
     padding-left: 42px;
-    margin-bottom: 20px;
     vertical-align: middle;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .conditions__remark {
@@ -242,7 +251,7 @@
   .conditions {
     width: 100%;
     max-width: 767px;
-    min-height: 738px;
+    min-height: 590px;
 
     @include center;
 
@@ -268,7 +277,7 @@
   .conditions__wrap {
     min-width: 288px;
     width: 90%;
-    min-height: 738px;
+    min-height: auto;
 
     @include center;
   }
@@ -303,31 +312,22 @@
   }
 
   .conditions__list {
-    width: 288px;
+    width: 276px;
     min-height: 327px;
 
     @include center;
 
-    margin-bottom: 0;
+    margin-left: 12px;
+    list-style-type: none;
+    counter-reset: num;
     font-size: 14px;
     line-height: 22px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 40px;
-      left: 11px;
-      width: 1px;
-      height: 241px;
-      background-image: url("../img/line-mob.png");
-      background-repeat: no-repeat;
-    }
   }
 
   .conditions__item {
     min-height: 44px;
-    padding-left: 43px;
-    margin-bottom: 26px;
+    padding-left: 32px;
+    padding-bottom: 26px;
 
     &:nth-child(3) {
       padding-top: 12px;
@@ -339,21 +339,34 @@
 
     &::before {
       position: absolute;
-      content: "";
-      top: 0;
-      left: -14px;
+      content: counter(num);
+      counter-increment: num;
+      display: inline-block;
+      top: 4px;
+      left: -18px;
+      width: 34px;
+      vertical-align: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 29px;
+      color: $yellow;
+      border-radius: 20px;
+      background-color: $white;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+      height: 34px;
     }
 
     &:nth-child(2)::before {
-      top: 10px;
+      top: 16px;
     }
 
     &:nth-child(3)::before {
-      top: 22px;
+      top: 28px;
     }
 
     &:nth-child(4)::before {
-      top: 12px;
+      top: 16px;
     }
   }
 

@@ -1,5 +1,6 @@
 .accordion {
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -10,8 +11,7 @@
     height: 8px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
+    background-size: contain;
   }
 }
 
@@ -29,7 +29,7 @@
     height: 8px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: rotate(180deg);
     cursor: pointer;
   }
@@ -74,7 +74,7 @@
       height: 8px;
       background-image: url("../img/arrow.svg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: bottom;
     }
   }
@@ -93,7 +93,7 @@
       height: 8px;
       background-image: url("../img/arrow.svg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       transform: rotate(180deg);
       cursor: pointer;
     }

@@ -131,19 +131,20 @@
     position: relative;
     width: 100%;
     max-width: 1180px;
-    min-height: 960px;
+    min-height: auto;
     background-size: 170% auto;
 
     &::before {
-      position: absolute;
-      content: "";
-      top: 70%;
-      right: 30%;
-      width: 300px;
-      height: 373.5px;
-      background-image: url("../img/foto-reply.png");
-      background-size: cover;
-      background-repeat: no-repeat;
+      display: none;
+      // position: absolute;
+      // content: "";
+      // top: 70%;
+      // right: 30%;
+      // width: 300px;
+      // height: 373.5px;
+      // background-image: url("../img/foto-reply.png");
+      // background-size: cover;
+      // background-repeat: no-repeat;
     }
 
     &::after {
@@ -160,7 +161,7 @@
 
   .questions__wrap {
     width: 90%;
-    min-height: 1180px;
+    min-height: auto;
 
     @include marginnone;
     @include center;
@@ -195,7 +196,7 @@
     position: relative;
     width: 100%;
     max-width: 767px;
-    min-height: 920px;
+    min-height: auto;
     margin-bottom: 56px;
     background-image: none;
 
@@ -218,7 +219,7 @@
 
   .questions__wrap {
     width: 90%;
-    min-height: 920px;
+    min-height: auto;
 
     @include marginnone;
     @include center;
@@ -239,7 +240,7 @@
   .questions__list {
     @include marginnone;
     width: 100%;
-    min-height: 798px;
+    min-height: auto;
     font-size: 14px;
     line-height: 22px;
   }

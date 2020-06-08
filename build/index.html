@@ -111,12 +111,12 @@
         <h2 class="conditions__head">Как поехать</h2>
         <p class="conditions__content">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
         <p class="conditions__text">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
-        <ul class="conditions__list">
+        <ol class="conditions__list">
           <li class="conditions__item">Быть в возрасте от 16 до 30 лет</li>
           <li class="conditions__item">Иметь оконченное среднее образование</li>
           <li class="conditions__item">Иметь документально подтвержденные еврейские корни и пройти консульскую проверку</li>
           <li class="conditions__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
-        </ul>
+        </ol>
         <p class="conditions__remark">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
       </div>
     </section>
@@ -376,7 +376,7 @@
             <div class="details__case">
               <p class="details__city city">Ваш город:
                 <select class="city__name" name="select" size="3" multiple="">
-                  <option class="city__item" value="s1">новосибирск</option>
+                  <option class="city__item" value="index.html">новосибирск</option>
                 </select>
               </p>
             </div>
@@ -427,10 +427,10 @@
             <p class="details__request">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <p class="details__security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
           </div>
-          <form class="details__form form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="form__input form__input--name" name="name" type="text" id="firstname" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
+          <form class="details__form form form--details" action="https://echo.htmlacademy.ru" method="post">
+            <input class="form__input form__input--name" name="name" type="text" id="firstname" value="" placeholder="имя" minlength="2" maxlength="20" required="required">
             <label class="visually-hidden" for="firstname">Введите имя</label>
-            <input class="form__input form__input--phone" name="telephone" type="text" id="telephone" value="" placeholder="Телефон" maxlength="16" required="required">
+            <input class="form__input form__input--phone" name="telephone" type="text" id="telephone" value="" placeholder="телефон" maxlength="16" required="required">
             <label class="visually-hidden" for="telephone">Введите телефон</label>
             <button class="form__button" type="submit" name="button">перезвоните мне</button>
           </form>
@@ -450,21 +450,21 @@
       </a>
       <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
       <ul class="page-footer__social social social--footer">
-        <li class="social__item">
+        <li class="social__item social__item--footer">
           <a class="social__link" href="#" aria-label="Фейсбук">
             <svg class="social__icon social__icon--fb" width="24" height="24">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="social__item social__item--footer">
           <a class="social__link" href="#" aria-label="Твиттер">
             <svg class="social__icon social__icon--tw" width="24" height="24">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="social__item social__item--footer">
           <a class="social__link" href="#" aria-label="Инстаграмм">
             <svg class="social__icon social__icon--inst" width="24" height="24">
               <use xlink:href="#icon-instagram"></use>

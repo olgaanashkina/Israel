@@ -80,6 +80,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  outline: none;
 }
 
 .success__head {
@@ -128,6 +129,7 @@
   border: none;
   border-radius: 80px;
   outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -176,7 +178,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 177px;
+      top: calc(222px - 14vw);
       left: 114px;
       width: 66px;
       height: 64px;
@@ -188,7 +190,7 @@
 
   .success__close {
     margin-right: 5px;
-    margin-bottom: 255px;
+    margin-bottom: calc(300px - 14vw);
   }
 
   .success__head {

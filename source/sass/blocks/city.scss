@@ -32,8 +32,8 @@
   margin-left: auto;
   margin-right: -10px;
   display: flex;
-  align-items: center;
-  font-weight: 700;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   font-variant: small-caps;
@@ -47,6 +47,7 @@
   vertical-align: baseline;
   overflow-y: auto;
   outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {

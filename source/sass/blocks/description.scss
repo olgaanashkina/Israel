@@ -112,7 +112,6 @@
 
     @include center;
 
-    min-height: 604px;
     display: flex;
     justify-content: center;
     background-color: $white;
@@ -165,8 +164,9 @@
   }
 
   .description__wrap {
-    width: 320px;
-    height: 224px;
+    min-width: 320px;
+    width: 70%;
+    height: auto;
     margin-top: 73px;
 
     &::before {
@@ -196,7 +196,9 @@
   }
 
   .description__wrap img {
-    width: 320px;
-    height: 224px;
+    // width: 320px;
+    // height: 224px;
+    width: 100%;
+    height: auto;
   }
 }

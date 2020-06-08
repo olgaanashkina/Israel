@@ -75,6 +75,7 @@
   font-variant: small-caps;
   color: $white;
   background: linear-gradient(138.15deg, $yellow 20.46%, $light-yellow 65.31%);
+  border-right: 1px solid #ffd701;
 
   &::before {
     position: absolute;
@@ -94,9 +95,10 @@
     width: 0;
     height: 0;
     top: 0;
-    right: -34.5px;
-    border: 34px solid transparent;
-    border-left-color: $light-yellow;
+    right: -34px;
+    border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    border-left: 34px solid $light-yellow;
     border-right: 0;
   }
 }
@@ -227,7 +229,7 @@
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
   .tabs {
     width: 100%;
-    min-height: 470px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -236,6 +238,7 @@
 
   .tabs__nav {
     min-width: 320px;
+    max-width: 80%;
     min-height: 48px;
     margin-right: 0;
     display: flex;
@@ -250,13 +253,14 @@
   }
 
   .tabs__content {
-    width: 285px;
-    min-height: 390px;
+    min-width: 285px;
+    width: 89%;
     align-items: center;
   }
 
   .tabs__item {
-    width: 285px;
+    min-width: 285px;
+    width: 90%;
   }
 
   .is-active {
@@ -319,6 +323,42 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  .tabs__title--star.is-active {
+    &::before {
+      background-image: url("../img/culture-w.svg");
+      opacity: 1;
+    }
+  }
+
+  .tabs__title--study.is-active {
+    &::before {
+      background-image: url("../img/study-w.svg");
+      background-size: 120%;
+      opacity: 1;
+    }
+  }
+
+  .tabs__title--bag.is-active {
+    &::before {
+      background-image: url("../img/business-w.svg");
+      opacity: 1;
+    }
+  }
+
+  .tabs__title--heart.is-active {
+    &::before {
+      background-image: url("../img/volonteur-w.svg");
+      opacity: 1;
+    }
+  }
+
+  .tabs__title--lamp.is-active {
+    &::before {
+      background-image: url("../img/religion-w.svg");
+      opacity: 1;
     }
   }
 }

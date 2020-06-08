@@ -215,8 +215,9 @@ var addMask = function (input) {
 
 var validationPhone = function (inputPhone) {
   inputPhone.onfocus = function () {
+    inputPhone.placeholder = '+7(932)421';
     if (inputPhone.value === '') {
-      inputPhone.value = '+7(923)41';
+      inputPhone.value = '+7(';
     }
   };
   inputPhone.oninput = function () {
@@ -309,3 +310,9 @@ document.addEventListener('DOMContentLoaded', function () {
     navs[active].classList.add('show-dot');
   };
 });
+
+// Ссылка в option select
+
+document.querySelector('select').onchange = function(){
+  window.location = this.value
+}

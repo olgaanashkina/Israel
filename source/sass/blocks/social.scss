@@ -1,5 +1,5 @@
 .social {
-  width: 104px;
+  min-width: 104px;
   min-height: 24px;
 
   @include marginnone;
@@ -14,20 +14,26 @@
 
     @include marginnone;
 
-    margin-left: -2px;
+    margin-left: -20px;
   }
 
   &--comments {
     margin-left: auto;
+    justify-content: flex-end;
   }
 
   &--footer {
-    width: 118px;
+    justify-content: flex-end;
   }
 }
 
 .social__item {
   @include marginnone;
+  margin-left: 15px;
+
+  &--footer {
+    margin-left: 20px;
+  }
 }
 
 .social__icon {

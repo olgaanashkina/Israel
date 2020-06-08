@@ -1,6 +1,17 @@
 .form {
   display: flex;
   justify-content: space-between;
+
+  &--details {
+    justify-content: flex-start;
+  }
+
+  &--details input {
+    width: 29.4%;
+    margin-right: 2.7%;
+    padding-right: 2px;
+    padding-left: 4.7%;
+  }
 }
 
 .form input:invalid {
@@ -11,7 +22,8 @@
   width: 249px;
   height: 59px;
   margin: 0 2px;
-  padding-left: 40px;
+  padding: 19px 40px;
+  display: flex;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-weight: 500;
   font-size: 17px;
@@ -82,7 +94,7 @@
   height: 13px;
   top: 0;
   left: 60px;
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 0, 0, 0.01);
   border-image: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
   border-radius: 2px;
   border-image-slice: 1;
@@ -170,7 +182,7 @@
   }
 
   .form input[type="checkbox"]:checked + label::after {
-    top: 0;
+    top: -2px;
     left: 2px;
   }
 }

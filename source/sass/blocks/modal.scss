@@ -68,6 +68,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  outline: none;
 }
 
 .modal__head {
@@ -193,7 +194,7 @@
 
   .modal__close {
     margin-right: 10px;
-    margin-bottom: 128px;
+    margin-bottom: calc(200px - 22.5vw);
   }
 
   .modal__head {
