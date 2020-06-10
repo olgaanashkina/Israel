@@ -151,13 +151,14 @@
     box-sizing: border-box;
     z-index: 10;
     width: 100%;
-    min-height: 768px;
+    min-height: auto;
   }
 
   .success__wrap {
     position: relative;
-    width: 320px;
-    min-height: 768px;
+    min-width: 320px;
+    width: 80%;
+    min-height: auto;
 
     @include center;
 
@@ -167,19 +168,20 @@
 
   .success__cont {
     position: relative;
-    width: 288px;
+    width: 90%;
     min-height: 452px;
 
     @include center;
 
     margin-top: 24px;
+    margin-bottom: calc(390px - 37vw);
     align-items: center;
 
     &::before {
       position: absolute;
       content: "";
       top: calc(222px - 14vw);
-      left: 114px;
+      left: calc(50% - 33px);
       width: 66px;
       height: 64px;
       background-image: url("../img/ok.png");
@@ -200,11 +202,16 @@
   }
 
   .success__content {
-    width: 287px;
+    min-width: 287px;
+    width: 60%;
     min-height: 68px;
     margin-bottom: 7px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+  }
+
+  .success__ok {
+    margin-bottom: 20px;
   }
 }
